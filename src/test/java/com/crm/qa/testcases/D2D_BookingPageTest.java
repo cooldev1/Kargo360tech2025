@@ -161,11 +161,11 @@ public class D2D_BookingPageTest  extends TestBase {
 				Thread.sleep(2000);
 				
 				 String gweight_l  =  sheet.getRow(i).getCell(8).getStringCellValue();
-				 driver.findElement(By.xpath("//*[contains(@class,'table deminsion-table ng-tns-c25')]//child::tbody//child::tr//child::td[2]//input[contains(@class,'form-control ng-tns-c250')][1]")).sendKeys(gweight_l); //Length
+				 driver.findElement(By.xpath("//*[contains(@class,'table deminsion-table ng-tns-c')]//child::tbody//child::tr//child::td[2]//input[contains(@class,'form-control ng-tns-c')][1]")).sendKeys(gweight_l); //Length
 				 String gweight_h  =  sheet.getRow(i).getCell(9).getStringCellValue();
-				 driver.findElement(By.xpath("//*[contains(@class,'table deminsion-table ng-tns-c25')]//child::tbody//child::tr//child::td[3]//input[contains(@class,'form-control ng-tns-c250')][1]")).sendKeys(gweight_h); //Width
+				 driver.findElement(By.xpath("//*[contains(@class,'table deminsion-table ng-tns-c')]//child::tbody//child::tr//child::td[3]//input[contains(@class,'form-control ng-tns-c')][1]")).sendKeys(gweight_h); //Width
 				 String gweight_w  =  sheet.getRow(i).getCell(10).getStringCellValue();
-				 driver.findElement(By.xpath("//*[contains(@class,'table deminsion-table ng-tns-c25')]//child::tbody//child::tr//child::td[4]//input[contains(@class,'form-control ng-tns-c250')][1]")).sendKeys(gweight_w); //Height
+				 driver.findElement(By.xpath("//*[contains(@class,'table deminsion-table ng-tns-c')]//child::tbody//child::tr//child::td[4]//input[contains(@class,'form-control ng-tns-c')][1]")).sendKeys(gweight_w); //Height
 
 				 driver.findElement(By.xpath("//button[contains(text(),'Calculate')]")).sendKeys(Keys.ENTER); //To Calculate weight
 				 Thread.sleep(1000);
@@ -376,11 +376,11 @@ public class D2D_BookingPageTest  extends TestBase {
 				Thread.sleep(2000);
 				
 				 String gweight_l  =  sheet.getRow(i).getCell(8).getStringCellValue();
-				 driver.findElement(By.xpath("//*[contains(@class,'table deminsion-table ng-tns-c25')]//child::tbody//child::tr//child::td[2]//input[contains(@class,'form-control ng-tns-c250')][1]")).sendKeys(gweight_l); //Length
+				 driver.findElement(By.xpath("//*[contains(@class,'table deminsion-table ng-tns-c')]//child::tbody//child::tr//child::td[2]//input[contains(@class,'form-control ng-tns-c')][1]")).sendKeys(gweight_l); //Length
 				 String gweight_h  =  sheet.getRow(i).getCell(9).getStringCellValue();
-				 driver.findElement(By.xpath("//*[contains(@class,'table deminsion-table ng-tns-c25')]//child::tbody//child::tr//child::td[3]//input[contains(@class,'form-control ng-tns-c250')][1]")).sendKeys(gweight_h); //Width
+				 driver.findElement(By.xpath("//*[contains(@class,'table deminsion-table ng-tns-c')]//child::tbody//child::tr//child::td[3]//input[contains(@class,'form-control ng-tns-c')][1]")).sendKeys(gweight_h); //Width
 				 String gweight_w  =  sheet.getRow(i).getCell(10).getStringCellValue();
-				 driver.findElement(By.xpath("//*[contains(@class,'table deminsion-table ng-tns-c25')]//child::tbody//child::tr//child::td[4]//input[contains(@class,'form-control ng-tns-c250')][1]")).sendKeys(gweight_w); //Height
+				 driver.findElement(By.xpath("//*[contains(@class,'table deminsion-table ng-tns-c')]//child::tbody//child::tr//child::td[4]//input[contains(@class,'form-control ng-tns-c')][1]")).sendKeys(gweight_w); //Height
 
 				 driver.findElement(By.xpath("//button[contains(text(),'Calculate')]")).sendKeys(Keys.ENTER); //To Calculate weight
 				 Thread.sleep(1000);
@@ -587,11 +587,11 @@ public class D2D_BookingPageTest  extends TestBase {
 //				Thread.sleep(2000);
 //				
 //				 String gweight_l  =  sheet.getRow(i).getCell(8).getStringCellValue();
-//				 driver.findElement(By.xpath("//*[contains(@class,'table deminsion-table ng-tns-c25')]//child::tbody//child::tr//child::td[2]//input[contains(@class,'form-control ng-tns-c250')][1]")).sendKeys(gweight_l); //Length
+//				 driver.findElement(By.xpath("//*[contains(@class,'table deminsion-table ng-tns-c')]//child::tbody//child::tr//child::td[2]//input[contains(@class,'form-control ng-tns-c')][1]")).sendKeys(gweight_l); //Length
 //				 String gweight_h  =  sheet.getRow(i).getCell(9).getStringCellValue();
-//				 driver.findElement(By.xpath("//*[contains(@class,'table deminsion-table ng-tns-c25')]//child::tbody//child::tr//child::td[3]//input[contains(@class,'form-control ng-tns-c250')][1]")).sendKeys(gweight_h); //Width
+//				 driver.findElement(By.xpath("//*[contains(@class,'table deminsion-table ng-tns-c')]//child::tbody//child::tr//child::td[3]//input[contains(@class,'form-control ng-tns-c')][1]")).sendKeys(gweight_h); //Width
 //				 String gweight_w  =  sheet.getRow(i).getCell(10).getStringCellValue();
-//				 driver.findElement(By.xpath("//*[contains(@class,'table deminsion-table ng-tns-c25')]//child::tbody//child::tr//child::td[4]//input[contains(@class,'form-control ng-tns-c250')][1]")).sendKeys(gweight_w); //Height
+//				 driver.findElement(By.xpath("//*[contains(@class,'table deminsion-table ng-tns-c')]//child::tbody//child::tr//child::td[4]//input[contains(@class,'form-control ng-tns-c')][1]")).sendKeys(gweight_w); //Height
 //
 //				 driver.findElement(By.xpath("//button[contains(text(),'Calculate')]")).sendKeys(Keys.ENTER); //To Calculate weight
 //				 Thread.sleep(1000);
@@ -799,11 +799,11 @@ public class D2D_BookingPageTest  extends TestBase {
 				Thread.sleep(2000);
 				
 				 String gweight_l  =  sheet.getRow(i).getCell(8).getStringCellValue();
-				 driver.findElement(By.xpath("//*[contains(@class,'table deminsion-table ng-tns-c25')]//child::tbody//child::tr//child::td[2]//input[contains(@class,'form-control ng-tns-c250')][1]")).sendKeys(gweight_l); //Length
+				 driver.findElement(By.xpath("//*[contains(@class,'table deminsion-table ng-tns-c')]//child::tbody//child::tr//child::td[2]//input[contains(@class,'form-control ng-tns-c')][1]")).sendKeys(gweight_l); //Length
 				 String gweight_h  =  sheet.getRow(i).getCell(9).getStringCellValue();
-				 driver.findElement(By.xpath("//*[contains(@class,'table deminsion-table ng-tns-c25')]//child::tbody//child::tr//child::td[3]//input[contains(@class,'form-control ng-tns-c250')][1]")).sendKeys(gweight_h); //Width
+				 driver.findElement(By.xpath("//*[contains(@class,'table deminsion-table ng-tns-c')]//child::tbody//child::tr//child::td[3]//input[contains(@class,'form-control ng-tns-c')][1]")).sendKeys(gweight_h); //Width
 				 String gweight_w  =  sheet.getRow(i).getCell(10).getStringCellValue();
-				 driver.findElement(By.xpath("//*[contains(@class,'table deminsion-table ng-tns-c25')]//child::tbody//child::tr//child::td[4]//input[contains(@class,'form-control ng-tns-c250')][1]")).sendKeys(gweight_w); //Height
+				 driver.findElement(By.xpath("//*[contains(@class,'table deminsion-table ng-tns-c')]//child::tbody//child::tr//child::td[4]//input[contains(@class,'form-control ng-tns-c')][1]")).sendKeys(gweight_w); //Height
 
 				 driver.findElement(By.xpath("//button[contains(text(),'Calculate')]")).sendKeys(Keys.ENTER); //To Calculate weight
 				 Thread.sleep(1000);
@@ -1036,11 +1036,11 @@ public class D2D_BookingPageTest  extends TestBase {
 				Thread.sleep(2000);
 				
 				 String gweight_l  =  sheet.getRow(i).getCell(8).getStringCellValue();
-				 driver.findElement(By.xpath("//*[contains(@class,'table deminsion-table ng-tns-c25')]//child::tbody//child::tr//child::td[2]//input[contains(@class,'form-control ng-tns-c250')][1]")).sendKeys(gweight_l); //Length
+				 driver.findElement(By.xpath("//*[contains(@class,'table deminsion-table ng-tns-c')]//child::tbody//child::tr//child::td[2]//input[contains(@class,'form-control ng-tns-c')][1]")).sendKeys(gweight_l); //Length
 				 String gweight_h  =  sheet.getRow(i).getCell(9).getStringCellValue();
-				 driver.findElement(By.xpath("//*[contains(@class,'table deminsion-table ng-tns-c25')]//child::tbody//child::tr//child::td[3]//input[contains(@class,'form-control ng-tns-c250')][1]")).sendKeys(gweight_h); //Width
+				 driver.findElement(By.xpath("//*[contains(@class,'table deminsion-table ng-tns-c')]//child::tbody//child::tr//child::td[3]//input[contains(@class,'form-control ng-tns-c')][1]")).sendKeys(gweight_h); //Width
 				 String gweight_w  =  sheet.getRow(i).getCell(10).getStringCellValue();
-				 driver.findElement(By.xpath("//*[contains(@class,'table deminsion-table ng-tns-c25')]//child::tbody//child::tr//child::td[4]//input[contains(@class,'form-control ng-tns-c250')][1]")).sendKeys(gweight_w); //Height
+				 driver.findElement(By.xpath("//*[contains(@class,'table deminsion-table ng-tns-c')]//child::tbody//child::tr//child::td[4]//input[contains(@class,'form-control ng-tns-c')][1]")).sendKeys(gweight_w); //Height
 
 				 driver.findElement(By.xpath("//button[contains(text(),'Calculate')]")).sendKeys(Keys.ENTER); //To Calculate weight
 				 Thread.sleep(1000);
@@ -1374,11 +1374,11 @@ public class D2D_BookingPageTest  extends TestBase {
 //				Thread.sleep(2000);
 //				
 //				 String gweight_l  =  sheet.getRow(i).getCell(8).getStringCellValue();
-//				 driver.findElement(By.xpath("//*[contains(@class,'table deminsion-table ng-tns-c25')]//child::tbody//child::tr//child::td[2]//input[contains(@class,'form-control ng-tns-c250')][1]")).sendKeys(gweight_l); //Length
+//				 driver.findElement(By.xpath("//*[contains(@class,'table deminsion-table ng-tns-c')]//child::tbody//child::tr//child::td[2]//input[contains(@class,'form-control ng-tns-c')][1]")).sendKeys(gweight_l); //Length
 //				 String gweight_h  =  sheet.getRow(i).getCell(9).getStringCellValue();
-//				 driver.findElement(By.xpath("//*[contains(@class,'table deminsion-table ng-tns-c25')]//child::tbody//child::tr//child::td[3]//input[contains(@class,'form-control ng-tns-c250')][1]")).sendKeys(gweight_h); //Width
+//				 driver.findElement(By.xpath("//*[contains(@class,'table deminsion-table ng-tns-c')]//child::tbody//child::tr//child::td[3]//input[contains(@class,'form-control ng-tns-c')][1]")).sendKeys(gweight_h); //Width
 //				 String gweight_w  =  sheet.getRow(i).getCell(10).getStringCellValue();
-//				 driver.findElement(By.xpath("//*[contains(@class,'table deminsion-table ng-tns-c25')]//child::tbody//child::tr//child::td[4]//input[contains(@class,'form-control ng-tns-c250')][1]")).sendKeys(gweight_w); //Height
+//				 driver.findElement(By.xpath("//*[contains(@class,'table deminsion-table ng-tns-c')]//child::tbody//child::tr//child::td[4]//input[contains(@class,'form-control ng-tns-c')][1]")).sendKeys(gweight_w); //Height
 //
 //				 driver.findElement(By.xpath("//button[contains(text(),'Calculate')]")).sendKeys(Keys.ENTER); //To Calculate weight
 //				 Thread.sleep(1000);
@@ -1712,9 +1712,9 @@ public class D2D_BookingPageTest  extends TestBase {
 				Thread.sleep(2000);
 				
 				 String gweight_l  =  sheet.getRow(i).getCell(8).getStringCellValue();
-				 driver.findElement(By.xpath("//*[contains(@class,'table deminsion-table ng-tns-c25')]//child::tbody//child::tr//child::td[2]//input[contains(@class,'form-control ng-tns-c250')][1]")).sendKeys(gweight_l); //Length
+				 driver.findElement(By.xpath("//*[contains(@class,'table deminsion-table ng-tns-c')]//child::tbody//child::tr//child::td[2]//input[contains(@class,'form-control ng-tns-c')][1]")).sendKeys(gweight_l); //Length
 				 String gweight_h  =  sheet.getRow(i).getCell(9).getStringCellValue();
-				 driver.findElement(By.xpath("//*[contains(@class,'table deminsion-table ng-tns-c25')]//child::tbody//child::tr//child::td[3]//input[contains(@class,'form-control ng-tns-c250')][1]")).sendKeys(gweight_h); //Width
+				 driver.findElement(By.xpath("//*[contains(@class,'table deminsion-table ng-tns-c')]//child::tbody//child::tr//child::td[3]//input[contains(@class,'form-control ng-tns-c')][1]")).sendKeys(gweight_h); //Width
 				 String gweight_w  =  sheet.getRow(i).getCell(10).getStringCellValue();
 				 driver.findElement(By.xpath("//*[contains(@class,'table deminsion-table ng-tns-c25')]//child::tbody//child::tr//child::td[4]//input[contains(@class,'form-control ng-tns-c250')][1]")).sendKeys(gweight_w); //Height
 
@@ -2076,9 +2076,9 @@ public class D2D_BookingPageTest  extends TestBase {
 				Thread.sleep(2000);
 				
 				 String gweight_l  =  sheet.getRow(i).getCell(8).getStringCellValue();
-				 driver.findElement(By.xpath("//*[contains(@class,'table deminsion-table ng-tns-c25')]//child::tbody//child::tr//child::td[2]//input[contains(@class,'form-control ng-tns-c250')][1]")).sendKeys(gweight_l); //Length
+				 driver.findElement(By.xpath("//*[contains(@class,'table deminsion-table ng-tns-c')]//child::tbody//child::tr//child::td[2]//input[contains(@class,'form-control ng-tns-c')][1]")).sendKeys(gweight_l); //Length
 				 String gweight_h  =  sheet.getRow(i).getCell(9).getStringCellValue();
-				 driver.findElement(By.xpath("//*[contains(@class,'table deminsion-table ng-tns-c25')]//child::tbody//child::tr//child::td[3]//input[contains(@class,'form-control ng-tns-c250')][1]")).sendKeys(gweight_h); //Width
+				 driver.findElement(By.xpath("//*[contains(@class,'table deminsion-table ng-tns-c')]//child::tbody//child::tr//child::td[3]//input[contains(@class,'form-control ng-tns-c')][1]")).sendKeys(gweight_h); //Width
 				 String gweight_w  =  sheet.getRow(i).getCell(10).getStringCellValue();
 				 driver.findElement(By.xpath("//*[contains(@class,'table deminsion-table ng-tns-c25')]//child::tbody//child::tr//child::td[4]//input[contains(@class,'form-control ng-tns-c250')][1]")).sendKeys(gweight_w); //Height
 
@@ -2479,9 +2479,9 @@ public class D2D_BookingPageTest  extends TestBase {
 //				Thread.sleep(2000);
 //				
 //				 String gweight_l  =  sheet.getRow(i).getCell(8).getStringCellValue();
-//				 driver.findElement(By.xpath("//*[contains(@class,'table deminsion-table ng-tns-c25')]//child::tbody//child::tr//child::td[2]//input[contains(@class,'form-control ng-tns-c250')][1]")).sendKeys(gweight_l); //Length
+//				 driver.findElement(By.xpath("//*[contains(@class,'table deminsion-table ng-tns-c')]//child::tbody//child::tr//child::td[2]//input[contains(@class,'form-control ng-tns-c')][1]")).sendKeys(gweight_l); //Length
 //				 String gweight_h  =  sheet.getRow(i).getCell(9).getStringCellValue();
-//				 driver.findElement(By.xpath("//*[contains(@class,'table deminsion-table ng-tns-c25')]//child::tbody//child::tr//child::td[3]//input[contains(@class,'form-control ng-tns-c250')][1]")).sendKeys(gweight_h); //Width
+//				 driver.findElement(By.xpath("//*[contains(@class,'table deminsion-table ng-tns-c')]//child::tbody//child::tr//child::td[3]//input[contains(@class,'form-control ng-tns-c')][1]")).sendKeys(gweight_h); //Width
 //				 String gweight_w  =  sheet.getRow(i).getCell(10).getStringCellValue();
 //				 driver.findElement(By.xpath("//*[contains(@class,'table deminsion-table ng-tns-c25')]//child::tbody//child::tr//child::td[4]//input[contains(@class,'form-control ng-tns-c250')][1]")).sendKeys(gweight_w); //Height
 //
@@ -2881,9 +2881,9 @@ public class D2D_BookingPageTest  extends TestBase {
 				Thread.sleep(2000);
 				
 				 String gweight_l  =  sheet.getRow(i).getCell(8).getStringCellValue();
-				 driver.findElement(By.xpath("//*[contains(@class,'table deminsion-table ng-tns-c25')]//child::tbody//child::tr//child::td[2]//input[contains(@class,'form-control ng-tns-c250')][1]")).sendKeys(gweight_l); //Length
+				 driver.findElement(By.xpath("//*[contains(@class,'table deminsion-table ng-tns-c')]//child::tbody//child::tr//child::td[2]//input[contains(@class,'form-control ng-tns-c')][1]")).sendKeys(gweight_l); //Length
 				 String gweight_h  =  sheet.getRow(i).getCell(9).getStringCellValue();
-				 driver.findElement(By.xpath("//*[contains(@class,'table deminsion-table ng-tns-c25')]//child::tbody//child::tr//child::td[3]//input[contains(@class,'form-control ng-tns-c250')][1]")).sendKeys(gweight_h); //Width
+				 driver.findElement(By.xpath("//*[contains(@class,'table deminsion-table ng-tns-c')]//child::tbody//child::tr//child::td[3]//input[contains(@class,'form-control ng-tns-c')][1]")).sendKeys(gweight_h); //Width
 				 String gweight_w  =  sheet.getRow(i).getCell(10).getStringCellValue();
 				 driver.findElement(By.xpath("//*[contains(@class,'table deminsion-table ng-tns-c25')]//child::tbody//child::tr//child::td[4]//input[contains(@class,'form-control ng-tns-c250')][1]")).sendKeys(gweight_w); //Height
 
@@ -3307,9 +3307,9 @@ public class D2D_BookingPageTest  extends TestBase {
 				Thread.sleep(2000);
 				
 				 String gweight_l  =  sheet.getRow(i).getCell(8).getStringCellValue();
-				 driver.findElement(By.xpath("//*[contains(@class,'table deminsion-table ng-tns-c25')]//child::tbody//child::tr//child::td[2]//input[contains(@class,'form-control ng-tns-c250')][1]")).sendKeys(gweight_l); //Length
+				 driver.findElement(By.xpath("//*[contains(@class,'table deminsion-table ng-tns-c')]//child::tbody//child::tr//child::td[2]//input[contains(@class,'form-control ng-tns-c')][1]")).sendKeys(gweight_l); //Length
 				 String gweight_h  =  sheet.getRow(i).getCell(9).getStringCellValue();
-				 driver.findElement(By.xpath("//*[contains(@class,'table deminsion-table ng-tns-c25')]//child::tbody//child::tr//child::td[3]//input[contains(@class,'form-control ng-tns-c250')][1]")).sendKeys(gweight_h); //Width
+				 driver.findElement(By.xpath("//*[contains(@class,'table deminsion-table ng-tns-c')]//child::tbody//child::tr//child::td[3]//input[contains(@class,'form-control ng-tns-c')][1]")).sendKeys(gweight_h); //Width
 				 String gweight_w  =  sheet.getRow(i).getCell(10).getStringCellValue();
 				 driver.findElement(By.xpath("//*[contains(@class,'table deminsion-table ng-tns-c25')]//child::tbody//child::tr//child::td[4]//input[contains(@class,'form-control ng-tns-c250')][1]")).sendKeys(gweight_w); //Height
 
@@ -3767,9 +3767,9 @@ public class D2D_BookingPageTest  extends TestBase {
 //				Thread.sleep(2000);
 //				
 //				 String gweight_l  =  sheet.getRow(i).getCell(8).getStringCellValue();
-//				 driver.findElement(By.xpath("//*[contains(@class,'table deminsion-table ng-tns-c25')]//child::tbody//child::tr//child::td[2]//input[contains(@class,'form-control ng-tns-c250')][1]")).sendKeys(gweight_l); //Length
+//				 driver.findElement(By.xpath("//*[contains(@class,'table deminsion-table ng-tns-c')]//child::tbody//child::tr//child::td[2]//input[contains(@class,'form-control ng-tns-c')][1]")).sendKeys(gweight_l); //Length
 //				 String gweight_h  =  sheet.getRow(i).getCell(9).getStringCellValue();
-//				 driver.findElement(By.xpath("//*[contains(@class,'table deminsion-table ng-tns-c25')]//child::tbody//child::tr//child::td[3]//input[contains(@class,'form-control ng-tns-c250')][1]")).sendKeys(gweight_h); //Width
+//				 driver.findElement(By.xpath("//*[contains(@class,'table deminsion-table ng-tns-c')]//child::tbody//child::tr//child::td[3]//input[contains(@class,'form-control ng-tns-c')][1]")).sendKeys(gweight_h); //Width
 //				 String gweight_w  =  sheet.getRow(i).getCell(10).getStringCellValue();
 //				 driver.findElement(By.xpath("//*[contains(@class,'table deminsion-table ng-tns-c25')]//child::tbody//child::tr//child::td[4]//input[contains(@class,'form-control ng-tns-c250')][1]")).sendKeys(gweight_w); //Height
 //
@@ -4226,9 +4226,9 @@ public class D2D_BookingPageTest  extends TestBase {
 				Thread.sleep(2000);
 				
 				 String gweight_l  =  sheet.getRow(i).getCell(8).getStringCellValue();
-				 driver.findElement(By.xpath("//*[contains(@class,'table deminsion-table ng-tns-c25')]//child::tbody//child::tr//child::td[2]//input[contains(@class,'form-control ng-tns-c250')][1]")).sendKeys(gweight_l); //Length
+				 driver.findElement(By.xpath("//*[contains(@class,'table deminsion-table ng-tns-c')]//child::tbody//child::tr//child::td[2]//input[contains(@class,'form-control ng-tns-c')][1]")).sendKeys(gweight_l); //Length
 				 String gweight_h  =  sheet.getRow(i).getCell(9).getStringCellValue();
-				 driver.findElement(By.xpath("//*[contains(@class,'table deminsion-table ng-tns-c25')]//child::tbody//child::tr//child::td[3]//input[contains(@class,'form-control ng-tns-c250')][1]")).sendKeys(gweight_h); //Width
+				 driver.findElement(By.xpath("//*[contains(@class,'table deminsion-table ng-tns-c')]//child::tbody//child::tr//child::td[3]//input[contains(@class,'form-control ng-tns-c')][1]")).sendKeys(gweight_h); //Width
 				 String gweight_w  =  sheet.getRow(i).getCell(10).getStringCellValue();
 				 driver.findElement(By.xpath("//*[contains(@class,'table deminsion-table ng-tns-c25')]//child::tbody//child::tr//child::td[4]//input[contains(@class,'form-control ng-tns-c250')][1]")).sendKeys(gweight_w); //Height
 
@@ -4710,9 +4710,9 @@ public class D2D_BookingPageTest  extends TestBase {
 				Thread.sleep(2000);
 				
 				 String gweight_l  =  sheet.getRow(i).getCell(8).getStringCellValue();
-				 driver.findElement(By.xpath("//*[contains(@class,'table deminsion-table ng-tns-c25')]//child::tbody//child::tr//child::td[2]//input[contains(@class,'form-control ng-tns-c250')][1]")).sendKeys(gweight_l); //Length
+				 driver.findElement(By.xpath("//*[contains(@class,'table deminsion-table ng-tns-c')]//child::tbody//child::tr//child::td[2]//input[contains(@class,'form-control ng-tns-c')][1]")).sendKeys(gweight_l); //Length
 				 String gweight_h  =  sheet.getRow(i).getCell(9).getStringCellValue();
-				 driver.findElement(By.xpath("//*[contains(@class,'table deminsion-table ng-tns-c25')]//child::tbody//child::tr//child::td[3]//input[contains(@class,'form-control ng-tns-c250')][1]")).sendKeys(gweight_h); //Width
+				 driver.findElement(By.xpath("//*[contains(@class,'table deminsion-table ng-tns-c')]//child::tbody//child::tr//child::td[3]//input[contains(@class,'form-control ng-tns-c')][1]")).sendKeys(gweight_h); //Width
 				 String gweight_w  =  sheet.getRow(i).getCell(10).getStringCellValue();
 				 driver.findElement(By.xpath("//*[contains(@class,'table deminsion-table ng-tns-c25')]//child::tbody//child::tr//child::td[4]//input[contains(@class,'form-control ng-tns-c250')][1]")).sendKeys(gweight_w); //Height
 
@@ -4921,9 +4921,9 @@ public class D2D_BookingPageTest  extends TestBase {
 				Thread.sleep(2000);
 				
 				 String gweight_l  =  sheet.getRow(i).getCell(8).getStringCellValue();
-				 driver.findElement(By.xpath("//*[contains(@class,'table deminsion-table ng-tns-c25')]//child::tbody//child::tr//child::td[2]//input[contains(@class,'form-control ng-tns-c250')][1]")).sendKeys(gweight_l); //Length
+				 driver.findElement(By.xpath("//*[contains(@class,'table deminsion-table ng-tns-c')]//child::tbody//child::tr//child::td[2]//input[contains(@class,'form-control ng-tns-c')][1]")).sendKeys(gweight_l); //Length
 				 String gweight_h  =  sheet.getRow(i).getCell(9).getStringCellValue();
-				 driver.findElement(By.xpath("//*[contains(@class,'table deminsion-table ng-tns-c25')]//child::tbody//child::tr//child::td[3]//input[contains(@class,'form-control ng-tns-c250')][1]")).sendKeys(gweight_h); //Width
+				 driver.findElement(By.xpath("//*[contains(@class,'table deminsion-table ng-tns-c')]//child::tbody//child::tr//child::td[3]//input[contains(@class,'form-control ng-tns-c')][1]")).sendKeys(gweight_h); //Width
 				 String gweight_w  =  sheet.getRow(i).getCell(10).getStringCellValue();
 				 driver.findElement(By.xpath("//*[contains(@class,'table deminsion-table ng-tns-c25')]//child::tbody//child::tr//child::td[4]//input[contains(@class,'form-control ng-tns-c250')][1]")).sendKeys(gweight_w); //Height
 
@@ -5132,9 +5132,9 @@ public class D2D_BookingPageTest  extends TestBase {
 //				Thread.sleep(2000);
 //				
 //				 String gweight_l  =  sheet.getRow(i).getCell(8).getStringCellValue();
-//				 driver.findElement(By.xpath("//*[contains(@class,'table deminsion-table ng-tns-c25')]//child::tbody//child::tr//child::td[2]//input[contains(@class,'form-control ng-tns-c250')][1]")).sendKeys(gweight_l); //Length
+//				 driver.findElement(By.xpath("//*[contains(@class,'table deminsion-table ng-tns-c')]//child::tbody//child::tr//child::td[2]//input[contains(@class,'form-control ng-tns-c')][1]")).sendKeys(gweight_l); //Length
 //				 String gweight_h  =  sheet.getRow(i).getCell(9).getStringCellValue();
-//				 driver.findElement(By.xpath("//*[contains(@class,'table deminsion-table ng-tns-c25')]//child::tbody//child::tr//child::td[3]//input[contains(@class,'form-control ng-tns-c250')][1]")).sendKeys(gweight_h); //Width
+//				 driver.findElement(By.xpath("//*[contains(@class,'table deminsion-table ng-tns-c')]//child::tbody//child::tr//child::td[3]//input[contains(@class,'form-control ng-tns-c')][1]")).sendKeys(gweight_h); //Width
 //				 String gweight_w  =  sheet.getRow(i).getCell(10).getStringCellValue();
 //				 driver.findElement(By.xpath("//*[contains(@class,'table deminsion-table ng-tns-c25')]//child::tbody//child::tr//child::td[4]//input[contains(@class,'form-control ng-tns-c250')][1]")).sendKeys(gweight_w); //Height
 //
@@ -5344,9 +5344,9 @@ public class D2D_BookingPageTest  extends TestBase {
 				Thread.sleep(2000);
 				
 				 String gweight_l  =  sheet.getRow(i).getCell(8).getStringCellValue();
-				 driver.findElement(By.xpath("//*[contains(@class,'table deminsion-table ng-tns-c25')]//child::tbody//child::tr//child::td[2]//input[contains(@class,'form-control ng-tns-c250')][1]")).sendKeys(gweight_l); //Length
+				 driver.findElement(By.xpath("//*[contains(@class,'table deminsion-table ng-tns-c')]//child::tbody//child::tr//child::td[2]//input[contains(@class,'form-control ng-tns-c')][1]")).sendKeys(gweight_l); //Length
 				 String gweight_h  =  sheet.getRow(i).getCell(9).getStringCellValue();
-				 driver.findElement(By.xpath("//*[contains(@class,'table deminsion-table ng-tns-c25')]//child::tbody//child::tr//child::td[3]//input[contains(@class,'form-control ng-tns-c250')][1]")).sendKeys(gweight_h); //Width
+				 driver.findElement(By.xpath("//*[contains(@class,'table deminsion-table ng-tns-c')]//child::tbody//child::tr//child::td[3]//input[contains(@class,'form-control ng-tns-c')][1]")).sendKeys(gweight_h); //Width
 				 String gweight_w  =  sheet.getRow(i).getCell(10).getStringCellValue();
 				 driver.findElement(By.xpath("//*[contains(@class,'table deminsion-table ng-tns-c25')]//child::tbody//child::tr//child::td[4]//input[contains(@class,'form-control ng-tns-c250')][1]")).sendKeys(gweight_w); //Height
 
@@ -5581,9 +5581,9 @@ public class D2D_BookingPageTest  extends TestBase {
 				Thread.sleep(2000);
 				
 				 String gweight_l  =  sheet.getRow(i).getCell(8).getStringCellValue();
-				 driver.findElement(By.xpath("//*[contains(@class,'table deminsion-table ng-tns-c25')]//child::tbody//child::tr//child::td[2]//input[contains(@class,'form-control ng-tns-c250')][1]")).sendKeys(gweight_l); //Length
+				 driver.findElement(By.xpath("//*[contains(@class,'table deminsion-table ng-tns-c')]//child::tbody//child::tr//child::td[2]//input[contains(@class,'form-control ng-tns-c')][1]")).sendKeys(gweight_l); //Length
 				 String gweight_h  =  sheet.getRow(i).getCell(9).getStringCellValue();
-				 driver.findElement(By.xpath("//*[contains(@class,'table deminsion-table ng-tns-c25')]//child::tbody//child::tr//child::td[3]//input[contains(@class,'form-control ng-tns-c250')][1]")).sendKeys(gweight_h); //Width
+				 driver.findElement(By.xpath("//*[contains(@class,'table deminsion-table ng-tns-c')]//child::tbody//child::tr//child::td[3]//input[contains(@class,'form-control ng-tns-c')][1]")).sendKeys(gweight_h); //Width
 				 String gweight_w  =  sheet.getRow(i).getCell(10).getStringCellValue();
 				 driver.findElement(By.xpath("//*[contains(@class,'table deminsion-table ng-tns-c25')]//child::tbody//child::tr//child::td[4]//input[contains(@class,'form-control ng-tns-c250')][1]")).sendKeys(gweight_w); //Height
 
@@ -5919,9 +5919,9 @@ public class D2D_BookingPageTest  extends TestBase {
 //				Thread.sleep(2000);
 //				
 //				 String gweight_l  =  sheet.getRow(i).getCell(8).getStringCellValue();
-//				 driver.findElement(By.xpath("//*[contains(@class,'table deminsion-table ng-tns-c25')]//child::tbody//child::tr//child::td[2]//input[contains(@class,'form-control ng-tns-c250')][1]")).sendKeys(gweight_l); //Length
+//				 driver.findElement(By.xpath("//*[contains(@class,'table deminsion-table ng-tns-c')]//child::tbody//child::tr//child::td[2]//input[contains(@class,'form-control ng-tns-c')][1]")).sendKeys(gweight_l); //Length
 //				 String gweight_h  =  sheet.getRow(i).getCell(9).getStringCellValue();
-//				 driver.findElement(By.xpath("//*[contains(@class,'table deminsion-table ng-tns-c25')]//child::tbody//child::tr//child::td[3]//input[contains(@class,'form-control ng-tns-c250')][1]")).sendKeys(gweight_h); //Width
+//				 driver.findElement(By.xpath("//*[contains(@class,'table deminsion-table ng-tns-c')]//child::tbody//child::tr//child::td[3]//input[contains(@class,'form-control ng-tns-c')][1]")).sendKeys(gweight_h); //Width
 //				 String gweight_w  =  sheet.getRow(i).getCell(10).getStringCellValue();
 //				 driver.findElement(By.xpath("//*[contains(@class,'table deminsion-table ng-tns-c25')]//child::tbody//child::tr//child::td[4]//input[contains(@class,'form-control ng-tns-c250')][1]")).sendKeys(gweight_w); //Height
 //
@@ -6257,9 +6257,9 @@ public class D2D_BookingPageTest  extends TestBase {
 				Thread.sleep(2000);
 				
 				 String gweight_l  =  sheet.getRow(i).getCell(8).getStringCellValue();
-				 driver.findElement(By.xpath("//*[contains(@class,'table deminsion-table ng-tns-c25')]//child::tbody//child::tr//child::td[2]//input[contains(@class,'form-control ng-tns-c250')][1]")).sendKeys(gweight_l); //Length
+				 driver.findElement(By.xpath("//*[contains(@class,'table deminsion-table ng-tns-c')]//child::tbody//child::tr//child::td[2]//input[contains(@class,'form-control ng-tns-c')][1]")).sendKeys(gweight_l); //Length
 				 String gweight_h  =  sheet.getRow(i).getCell(9).getStringCellValue();
-				 driver.findElement(By.xpath("//*[contains(@class,'table deminsion-table ng-tns-c25')]//child::tbody//child::tr//child::td[3]//input[contains(@class,'form-control ng-tns-c250')][1]")).sendKeys(gweight_h); //Width
+				 driver.findElement(By.xpath("//*[contains(@class,'table deminsion-table ng-tns-c')]//child::tbody//child::tr//child::td[3]//input[contains(@class,'form-control ng-tns-c')][1]")).sendKeys(gweight_h); //Width
 				 String gweight_w  =  sheet.getRow(i).getCell(10).getStringCellValue();
 				 driver.findElement(By.xpath("//*[contains(@class,'table deminsion-table ng-tns-c25')]//child::tbody//child::tr//child::td[4]//input[contains(@class,'form-control ng-tns-c250')][1]")).sendKeys(gweight_w); //Height
 
@@ -6621,9 +6621,9 @@ public class D2D_BookingPageTest  extends TestBase {
 				Thread.sleep(2000);
 				
 				 String gweight_l  =  sheet.getRow(i).getCell(8).getStringCellValue();
-				 driver.findElement(By.xpath("//*[contains(@class,'table deminsion-table ng-tns-c25')]//child::tbody//child::tr//child::td[2]//input[contains(@class,'form-control ng-tns-c250')][1]")).sendKeys(gweight_l); //Length
+				 driver.findElement(By.xpath("//*[contains(@class,'table deminsion-table ng-tns-c')]//child::tbody//child::tr//child::td[2]//input[contains(@class,'form-control ng-tns-c')][1]")).sendKeys(gweight_l); //Length
 				 String gweight_h  =  sheet.getRow(i).getCell(9).getStringCellValue();
-				 driver.findElement(By.xpath("//*[contains(@class,'table deminsion-table ng-tns-c25')]//child::tbody//child::tr//child::td[3]//input[contains(@class,'form-control ng-tns-c250')][1]")).sendKeys(gweight_h); //Width
+				 driver.findElement(By.xpath("//*[contains(@class,'table deminsion-table ng-tns-c')]//child::tbody//child::tr//child::td[3]//input[contains(@class,'form-control ng-tns-c')][1]")).sendKeys(gweight_h); //Width
 				 String gweight_w  =  sheet.getRow(i).getCell(10).getStringCellValue();
 				 driver.findElement(By.xpath("//*[contains(@class,'table deminsion-table ng-tns-c25')]//child::tbody//child::tr//child::td[4]//input[contains(@class,'form-control ng-tns-c250')][1]")).sendKeys(gweight_w); //Height
 
@@ -7024,9 +7024,9 @@ public class D2D_BookingPageTest  extends TestBase {
 //				Thread.sleep(2000);
 //				
 //				 String gweight_l  =  sheet.getRow(i).getCell(8).getStringCellValue();
-//				 driver.findElement(By.xpath("//*[contains(@class,'table deminsion-table ng-tns-c25')]//child::tbody//child::tr//child::td[2]//input[contains(@class,'form-control ng-tns-c250')][1]")).sendKeys(gweight_l); //Length
+//				 driver.findElement(By.xpath("//*[contains(@class,'table deminsion-table ng-tns-c')]//child::tbody//child::tr//child::td[2]//input[contains(@class,'form-control ng-tns-c')][1]")).sendKeys(gweight_l); //Length
 //				 String gweight_h  =  sheet.getRow(i).getCell(9).getStringCellValue();
-//				 driver.findElement(By.xpath("//*[contains(@class,'table deminsion-table ng-tns-c25')]//child::tbody//child::tr//child::td[3]//input[contains(@class,'form-control ng-tns-c250')][1]")).sendKeys(gweight_h); //Width
+//				 driver.findElement(By.xpath("//*[contains(@class,'table deminsion-table ng-tns-c')]//child::tbody//child::tr//child::td[3]//input[contains(@class,'form-control ng-tns-c')][1]")).sendKeys(gweight_h); //Width
 //				 String gweight_w  =  sheet.getRow(i).getCell(10).getStringCellValue();
 //				 driver.findElement(By.xpath("//*[contains(@class,'table deminsion-table ng-tns-c25')]//child::tbody//child::tr//child::td[4]//input[contains(@class,'form-control ng-tns-c250')][1]")).sendKeys(gweight_w); //Height
 //
@@ -7426,9 +7426,9 @@ public class D2D_BookingPageTest  extends TestBase {
 				Thread.sleep(2000);
 				
 				 String gweight_l  =  sheet.getRow(i).getCell(8).getStringCellValue();
-				 driver.findElement(By.xpath("//*[contains(@class,'table deminsion-table ng-tns-c25')]//child::tbody//child::tr//child::td[2]//input[contains(@class,'form-control ng-tns-c250')][1]")).sendKeys(gweight_l); //Length
+				 driver.findElement(By.xpath("//*[contains(@class,'table deminsion-table ng-tns-c')]//child::tbody//child::tr//child::td[2]//input[contains(@class,'form-control ng-tns-c')][1]")).sendKeys(gweight_l); //Length
 				 String gweight_h  =  sheet.getRow(i).getCell(9).getStringCellValue();
-				 driver.findElement(By.xpath("//*[contains(@class,'table deminsion-table ng-tns-c25')]//child::tbody//child::tr//child::td[3]//input[contains(@class,'form-control ng-tns-c250')][1]")).sendKeys(gweight_h); //Width
+				 driver.findElement(By.xpath("//*[contains(@class,'table deminsion-table ng-tns-c')]//child::tbody//child::tr//child::td[3]//input[contains(@class,'form-control ng-tns-c')][1]")).sendKeys(gweight_h); //Width
 				 String gweight_w  =  sheet.getRow(i).getCell(10).getStringCellValue();
 				 driver.findElement(By.xpath("//*[contains(@class,'table deminsion-table ng-tns-c25')]//child::tbody//child::tr//child::td[4]//input[contains(@class,'form-control ng-tns-c250')][1]")).sendKeys(gweight_w); //Height
 
@@ -7852,9 +7852,9 @@ public class D2D_BookingPageTest  extends TestBase {
 				Thread.sleep(2000);
 				
 				 String gweight_l  =  sheet.getRow(i).getCell(8).getStringCellValue();
-				 driver.findElement(By.xpath("//*[contains(@class,'table deminsion-table ng-tns-c25')]//child::tbody//child::tr//child::td[2]//input[contains(@class,'form-control ng-tns-c250')][1]")).sendKeys(gweight_l); //Length
+				 driver.findElement(By.xpath("//*[contains(@class,'table deminsion-table ng-tns-c')]//child::tbody//child::tr//child::td[2]//input[contains(@class,'form-control ng-tns-c')][1]")).sendKeys(gweight_l); //Length
 				 String gweight_h  =  sheet.getRow(i).getCell(9).getStringCellValue();
-				 driver.findElement(By.xpath("//*[contains(@class,'table deminsion-table ng-tns-c25')]//child::tbody//child::tr//child::td[3]//input[contains(@class,'form-control ng-tns-c250')][1]")).sendKeys(gweight_h); //Width
+				 driver.findElement(By.xpath("//*[contains(@class,'table deminsion-table ng-tns-c')]//child::tbody//child::tr//child::td[3]//input[contains(@class,'form-control ng-tns-c')][1]")).sendKeys(gweight_h); //Width
 				 String gweight_w  =  sheet.getRow(i).getCell(10).getStringCellValue();
 				 driver.findElement(By.xpath("//*[contains(@class,'table deminsion-table ng-tns-c25')]//child::tbody//child::tr//child::td[4]//input[contains(@class,'form-control ng-tns-c250')][1]")).sendKeys(gweight_w); //Height
 
@@ -8312,9 +8312,9 @@ public class D2D_BookingPageTest  extends TestBase {
 //				Thread.sleep(2000);
 //				
 //				 String gweight_l  =  sheet.getRow(i).getCell(8).getStringCellValue();
-//				 driver.findElement(By.xpath("//*[contains(@class,'table deminsion-table ng-tns-c25')]//child::tbody//child::tr//child::td[2]//input[contains(@class,'form-control ng-tns-c250')][1]")).sendKeys(gweight_l); //Length
+//				 driver.findElement(By.xpath("//*[contains(@class,'table deminsion-table ng-tns-c')]//child::tbody//child::tr//child::td[2]//input[contains(@class,'form-control ng-tns-c')][1]")).sendKeys(gweight_l); //Length
 //				 String gweight_h  =  sheet.getRow(i).getCell(9).getStringCellValue();
-//				 driver.findElement(By.xpath("//*[contains(@class,'table deminsion-table ng-tns-c25')]//child::tbody//child::tr//child::td[3]//input[contains(@class,'form-control ng-tns-c250')][1]")).sendKeys(gweight_h); //Width
+//				 driver.findElement(By.xpath("//*[contains(@class,'table deminsion-table ng-tns-c')]//child::tbody//child::tr//child::td[3]//input[contains(@class,'form-control ng-tns-c')][1]")).sendKeys(gweight_h); //Width
 //				 String gweight_w  =  sheet.getRow(i).getCell(10).getStringCellValue();
 //				 driver.findElement(By.xpath("//*[contains(@class,'table deminsion-table ng-tns-c25')]//child::tbody//child::tr//child::td[4]//input[contains(@class,'form-control ng-tns-c250')][1]")).sendKeys(gweight_w); //Height
 //
@@ -8772,9 +8772,9 @@ public class D2D_BookingPageTest  extends TestBase {
 				Thread.sleep(2000);
 				
 				 String gweight_l  =  sheet.getRow(i).getCell(8).getStringCellValue();
-				 driver.findElement(By.xpath("//*[contains(@class,'table deminsion-table ng-tns-c25')]//child::tbody//child::tr//child::td[2]//input[contains(@class,'form-control ng-tns-c250')][1]")).sendKeys(gweight_l); //Length
+				 driver.findElement(By.xpath("//*[contains(@class,'table deminsion-table ng-tns-c')]//child::tbody//child::tr//child::td[2]//input[contains(@class,'form-control ng-tns-c')][1]")).sendKeys(gweight_l); //Length
 				 String gweight_h  =  sheet.getRow(i).getCell(9).getStringCellValue();
-				 driver.findElement(By.xpath("//*[contains(@class,'table deminsion-table ng-tns-c25')]//child::tbody//child::tr//child::td[3]//input[contains(@class,'form-control ng-tns-c250')][1]")).sendKeys(gweight_h); //Width
+				 driver.findElement(By.xpath("//*[contains(@class,'table deminsion-table ng-tns-c')]//child::tbody//child::tr//child::td[3]//input[contains(@class,'form-control ng-tns-c')][1]")).sendKeys(gweight_h); //Width
 				 String gweight_w  =  sheet.getRow(i).getCell(10).getStringCellValue();
 				 driver.findElement(By.xpath("//*[contains(@class,'table deminsion-table ng-tns-c25')]//child::tbody//child::tr//child::td[4]//input[contains(@class,'form-control ng-tns-c250')][1]")).sendKeys(gweight_w); //Height
 
