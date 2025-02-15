@@ -36,8 +36,7 @@ public class CartMasterListingPageTest extends TestBase{
 	TestBase TestBase;
 	CartMasterListingPage Cartlistingpage;
 	NewCartcreationPageTest NewCartCreationPage;
-//	String sheetName = "contacts";
-	
+
 	   
 	public CartMasterListingPageTest(){
 			super();
@@ -54,6 +53,7 @@ public class CartMasterListingPageTest extends TestBase{
 		loginPage = new LoginPage();
 		NewCartCreationPage = new NewCartcreationPageTest();
 		homePage = loginPage.login(prop.getProperty("username"), prop.getProperty("password"));
+		
 //		TestUtil.runTimeInfo("error", "login successful");
 	
 	}
@@ -67,11 +67,12 @@ public class CartMasterListingPageTest extends TestBase{
 	public void verifyCartListingpage() throws InterruptedException{
 		homePage.verifyHomePageurl();
 		Cartlistingpage.clickOnCartListingPage();
-		Thread.sleep(2000);
+		Thread.sleep(1000);
 		Assert.assertEquals(driver.getCurrentUrl(),prop.getProperty("url")+ "/cart/list");
 	}
 		
 
+	
 	
 	@AfterMethod
 	public void tearDown(){
