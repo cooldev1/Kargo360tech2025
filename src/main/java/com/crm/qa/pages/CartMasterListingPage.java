@@ -42,7 +42,7 @@ public class CartMasterListingPage extends TestBase {
 		action.moveToElement(Organize).build().perform();
 		action.moveToElement(Masters).build().perform();
 		action.moveToElement(Finance).build().perform();
-		Thread.sleep(1000);
+	//	Thread.sleep(1000);
 		Cart.click();
 		
 	}
