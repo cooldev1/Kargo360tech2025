@@ -5,9 +5,11 @@
     <classes>
       <class name="com.crm.qa.testcases.CartMasterListingPageTest">
         <methods>
-          <include name="verifyCartListingpage"/>
           <include name="setUp"/>
+          <include name="testRefreshButton_withDes"/>
           <include name="tearDown"/>
+          <include name="verifySearchbtn_withCartdes"/>
+          <include name="verifyUIElements"/>
         </methods>
       </class> <!-- com.crm.qa.testcases.CartMasterListingPageTest -->
     </classes>
