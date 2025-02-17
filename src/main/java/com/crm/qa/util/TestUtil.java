@@ -10,9 +10,15 @@ import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.ss.usermodel.WorkbookFactory;
+import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 
 import com.crm.qa.base.TestBase;
 
@@ -100,4 +106,12 @@ public class TestUtil extends TestBase {
 		Thread.sleep(5000);
 	}
 
-}
+
+	    // Reusable method for verifying element visibility
+			public void verifyElementVisibility(By locator, String elementName, int timeout) {
+	        WebDriverWait wait = new WebDriverWait(driver, timeout); // Selenium 3 compatible
+	        WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
+	        Assert.assertTrue(element.isDisplayed(), "❌ " + elementName + " Not Found!");
+	    }
+	}
+//}

@@ -1,6 +1,7 @@
 package com.crm.qa.pages;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.CacheLookup;
@@ -11,9 +12,12 @@ import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.crm.qa.base.TestBase;
+import com.crm.qa.util.TestUtil;
 
 public class CartMasterListingPage extends TestBase {
 
+	TestUtil testUtil;
+	
 	// Open Orgnaze and Masters
 	
 		@FindBy(xpath = "//span[contains(text(),' Organize ')]")
@@ -69,16 +73,22 @@ public class CartMasterListingPage extends TestBase {
 	
 	public void clickOnCartListingPage() throws InterruptedException{
 		
-		WebElement Statusboxshowing = driver.findElement(By.xpath("//span[contains(text(),'Delivered AXB')]"));
-    	WebDriverWait wait = new WebDriverWait(driver, 10); // Use int instead of Duration
-    	wait.until(ExpectedConditions.textToBePresentInElement(Statusboxshowing, ""));
+		testUtil = new TestUtil();
     	
 		Actions action = new Actions(driver);
 		action.moveToElement(Organize).build().perform();
 		action.moveToElement(Masters).build().perform();
 		action.moveToElement(Finance).build().perform();		
 		Cart.click();
+		// Using reusable method for verification
+		testUtil.verifyElementVisibility(By.xpath("//button[@title='Advanced Filters']"), "Advance Button Should be show", 10);
+		driver.findElement(By.xpath("//input[@formcontrolname='cart']")).click();
 		
+//		 // Find the element you want to click
+//        WebElement element = driver.findElement(By.xpath("//button[@title='Advanced Filters']"));
+//		 // Use JavaScript Executor to click on the element
+//        JavascriptExecutor js = (JavascriptExecutor) driver;
+//        js.executeScript("arguments[0].click();", element);
 	}
 	
 	

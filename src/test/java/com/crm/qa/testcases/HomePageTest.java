@@ -1,5 +1,6 @@
 package com.crm.qa.testcases;
 
+import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -41,6 +42,9 @@ public class HomePageTest extends TestBase {
 	
 	@Test(priority=1)
 	public void verifyHomePageTitleTest() throws InterruptedException{
+		// Using reusable method for verification
+		testUtil.verifyElementVisibility(By.xpath("//button[@title='Advanced Filters']"), "Advanced Filter", 10);
+		
 		String homepageurl = homePage.verifyHomePageurl();
 		Assert.assertEquals(homepageurl,prop.getProperty("url")+ "/dashboard");
 	}
