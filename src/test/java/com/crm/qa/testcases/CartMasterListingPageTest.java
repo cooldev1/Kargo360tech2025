@@ -76,6 +76,7 @@ public class CartMasterListingPageTest extends TestBase{
 	public void verifyCartListingpage() throws InterruptedException{
 			homePage.verifyHomePageurl();	
 			Cartlistingpage.clickOnCartListingPage();
+			Cartlistingpage.veryfyCartLisingpage();
 			Assert.assertEquals(driver.getCurrentUrl(),prop.getProperty("url")+ "/cart/list");
 	}
 		
@@ -83,7 +84,7 @@ public class CartMasterListingPageTest extends TestBase{
 	public void verifyUIElements() throws InterruptedException {
 		homePage.verifyHomePageurl();
 		Cartlistingpage.clickOnCartListingPage();
-
+		Cartlistingpage.veryfyCartLisingpage();
 		assert driver.findElement(By.xpath("//*[@title='Advanced Filters']")).isDisplayed() : "❌ advanc filter Not Found!";
         assert driver.findElement(By.xpath("//*[@title='Search']")).isDisplayed() : "❌ Search Box Not Found!";
         assert driver.findElement(By.xpath("//*[@formcontrolname='status']")).isDisplayed() : "❌ Status Dropdown Not Found!";
@@ -97,7 +98,7 @@ public class CartMasterListingPageTest extends TestBase{
 	 public void verifySearchbtn_withCartNo() throws InterruptedException {
 		homePage.verifyHomePageurl();
 		Cartlistingpage.clickOnCartListingPage();
-		
+		Cartlistingpage.veryfyCartLisingpage();
 	     WebElement cartno = driver.findElement(By.xpath("//input[@formcontrolname='cart']"));
 	     String cartno_value =  driver.findElement(By.xpath("//table[@id='DataTables_Table_0']//child::tbody//child::td//child::a")).getText();
 	     cartno.sendKeys(cartno_value);
@@ -117,7 +118,7 @@ public class CartMasterListingPageTest extends TestBase{
 	 public void verifySearchbtn_withCartdes() throws InterruptedException {
 		homePage.verifyHomePageurl();
 		Cartlistingpage.clickOnCartListingPage();
-		
+		Cartlistingpage.veryfyCartLisingpage();
 		 // Locate dropdown element
         WebElement dropdown = driver.findElement(By.xpath("//*[@formcontrolname='cart_description']"));
         
@@ -142,7 +143,7 @@ public class CartMasterListingPageTest extends TestBase{
 	 public void verifySearchbtn_withStationCode() throws InterruptedException {
 		homePage.verifyHomePageurl();
 		Cartlistingpage.clickOnCartListingPage();
-		
+		Cartlistingpage.veryfyCartLisingpage();
 	     WebElement cartno = driver.findElement(By.xpath("//*[@formcontrolname='origin']"));
 	     String cartno_value =  driver.findElement(By.xpath("//table[@id='DataTables_Table_0']//child::tbody//child::td[3]")).getText();
 	     cartno.sendKeys(cartno_value);
@@ -161,7 +162,7 @@ public class CartMasterListingPageTest extends TestBase{
 	 public void verifySearchbtn_withStatus() throws InterruptedException {
 		homePage.verifyHomePageurl();
 		Cartlistingpage.clickOnCartListingPage();
-		
+		Cartlistingpage.veryfyCartLisingpage();
 		 // Locate status dropdown element
        WebElement dropdown = driver.findElement(By.xpath("//*[@formcontrolname='status']"));
        Select select = new Select(dropdown);
@@ -184,7 +185,7 @@ public class CartMasterListingPageTest extends TestBase{
 	public void testRefreshButton_withCartNo() throws InterruptedException {
 		homePage.verifyHomePageurl();
 		Cartlistingpage.clickOnCartListingPage();
-		
+		Cartlistingpage.veryfyCartLisingpage();
 		//To get cart value from current table
 		String cartval = driver.findElement(By.xpath("//table[@id='DataTables_Table_0']//child::tbody//child::tr[1]//child::td[1]")).getText();
 		
@@ -213,7 +214,7 @@ public class CartMasterListingPageTest extends TestBase{
 		 
 		homePage.verifyHomePageurl();
 		Cartlistingpage.clickOnCartListingPage();
-        
+		Cartlistingpage.veryfyCartLisingpage();
 	       WebElement dropdown = driver.findElement(By.xpath("//*[@formcontrolname='cart_description']"));
            Select select = new Select(dropdown);
            select.selectByVisibleText("Trolly"); // Choose "Cart/Trolly" option
@@ -234,7 +235,7 @@ public class CartMasterListingPageTest extends TestBase{
 	public void testRefreshButton_withStationCode() throws InterruptedException {
 		homePage.verifyHomePageurl();
 		Cartlistingpage.clickOnCartListingPage();
-		        
+		Cartlistingpage.veryfyCartLisingpage();
 	     WebElement cartno = driver.findElement(By.xpath("//*[@formcontrolname='origin']"));
 	     String cartno_value =  driver.findElement(By.xpath("//table[@id='DataTables_Table_0']//child::tbody//child::td[3]")).getText();
 	     cartno.sendKeys(cartno_value);
@@ -259,7 +260,7 @@ public class CartMasterListingPageTest extends TestBase{
 	public void testRefreshButton_withStatus() throws InterruptedException {
 		homePage.verifyHomePageurl();
 		Cartlistingpage.clickOnCartListingPage();
-		        
+		Cartlistingpage.veryfyCartLisingpage();
 		WebElement element = driver.findElement(By.xpath("//*[@formcontrolname='status']"));
 		((JavascriptExecutor) driver).executeScript("arguments[0].click();", element);
 
