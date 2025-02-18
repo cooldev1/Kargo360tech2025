@@ -76,6 +76,7 @@ public class CartMasterListingPageTest extends TestBase{
 		homePage.verifyHomePageurl();
 		Thread.sleep(1000);
 		Cartlistingpage.clickOnCartListingPage();
+		Cartlistingpage.veryfyCartLisingpage();
 		Thread.sleep(1000);
 		Assert.assertEquals(driver.getCurrentUrl(),prop.getProperty("url")+ "/cart/list");
 	}
@@ -85,6 +86,7 @@ public class CartMasterListingPageTest extends TestBase{
 		homePage.verifyHomePageurl();
 		Thread.sleep(1000);
 		Cartlistingpage.clickOnCartListingPage();
+		Cartlistingpage.veryfyCartLisingpage();
 		Thread.sleep(1000);
 		assert driver.findElement(By.xpath("//*[@title='Advanced Filters']")).isDisplayed() : "❌ advanc filter Not Found!";
         assert driver.findElement(By.xpath("//*[@title='Search']")).isDisplayed() : "❌ Search Box Not Found!";
@@ -100,6 +102,7 @@ public class CartMasterListingPageTest extends TestBase{
 		homePage.verifyHomePageurl();
 		Thread.sleep(1000);
 		Cartlistingpage.clickOnCartListingPage();
+		
 		Thread.sleep(1000);
 		
 	     WebElement cartno = driver.findElement(By.xpath("//input[@formcontrolname='cart']"));
@@ -231,10 +234,10 @@ public class CartMasterListingPageTest extends TestBase{
 	    Thread.sleep(1000);
 	    Cartlistingpage.clickOnCartListingPage();
 		
-	    // Locate the Cart Description dropdown element
-	    	WebElement Statusboxshowing = driver.findElement(By.xpath("//*[@formcontrolname='cart_description']"));
-	    	WebDriverWait wait1 = new WebDriverWait(driver, 10); // Use int instead of Duration
-	    	wait1.until(ExpectedConditions.textToBePresentInElement(Statusboxshowing, ""));	
+//	    // Locate the Cart Description dropdown element
+//	    	WebElement Statusboxshowing = driver.findElement(By.xpath("//*[@formcontrolname='cart_description']"));
+//	    	WebDriverWait wait1 = new WebDriverWait(driver, 10); // Use int instead of Duration
+//	    	wait1.until(ExpectedConditions.textToBePresentInElement(Statusboxshowing, ""));	
         
 	       WebElement dropdown = driver.findElement(By.xpath("//*[@formcontrolname='cart_description']"));
            Select select = new Select(dropdown);
@@ -242,7 +245,7 @@ public class CartMasterListingPageTest extends TestBase{
 
            // Step 5: Click on the Search button
            		Cartlistingpage.clickon_searchbtn();
-      //       		Thread.sleep(2000);
+             		Thread.sleep(2000);
       
                		
            		String firstRowdes = driver.findElement(By.xpath("//table[@id='DataTables_Table_0']//child::tbody//child::tr//child::td[2]")).getText();
