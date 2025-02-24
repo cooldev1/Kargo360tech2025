@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Suite">
+	
+	
   <test name="Test">
     <classes>
 		<!--
@@ -29,11 +31,11 @@
       <class name="com.crm.qa.testcases.NewHSCodeCreationPageTest"/>
       <class name="com.crm.qa.testcases.State_MasterListingPageTest"/>
       <class name="com.crm.qa.testcases.HSCode_MasterListingPageTest"/>
-      -->
         <class name="com.crm.qa.testcases.D2D_BookingPageTest"/>
         <class name="com.crm.qa.testcases.A2A_BookingPageTest"/>
-        <class name="com.crm.qa.testcases.international_BookingPageTest"/>
-        
+       
+        <class name="com.crm.qa.testcases.CartMasterListingPageTest"/>
+          -->
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

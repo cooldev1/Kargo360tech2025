@@ -62,14 +62,17 @@ public class CartMasterListingPage extends TestBase {
 		
 		@FindBy(xpath = "//a[@href='/cart/list']")
 		WebElement paginationbtn;
+		
+		@FindBy(xpath = "//input[@formcontrolname='from_date']")
+		WebElement fromDate;
 	
+		@FindBy(xpath = "//input[@formcontrolname='to_date']")
+		WebElement toDate;
+		
 	// Initializing the Page Objects:
 	public CartMasterListingPage() {
 		PageFactory.initElements(driver, this);
 	}
-	
-
-
 	
 	public void clickOnCartListingPage() throws InterruptedException{
 		
@@ -117,4 +120,6 @@ public class CartMasterListingPage extends TestBase {
 	paginationbtn.isDisplayed();		
 }
 
+	
+	
 }

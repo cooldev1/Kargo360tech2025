@@ -6,9 +6,15 @@
 package com.crm.qa.testcases;
 
 import static org.testng.Assert.assertEquals;
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+
 import static org.testng.Assert.assertTrue;
 
 import java.io.IOException;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.List;
 
 import org.apache.log4j.PropertyConfigurator;
@@ -34,7 +40,12 @@ import com.crm.qa.pages.HomePage;
 import com.crm.qa.pages.LoginPage;
 import com.crm.qa.util.CustomListener;
 import com.crm.qa.util.TestUtil;
+
+import java.time.DayOfWeek;
 import java.time.Duration;
+import java.time.LocalDate;
+import java.time.DayOfWeek;
+import java.time.format.DateTimeFormatter;
 
 @Listeners(CustomListener.class)
 public class CartMasterListingPageTest extends TestBase{
@@ -283,7 +294,94 @@ public class CartMasterListingPageTest extends TestBase{
         
 	}	
 
-//it should be commit
+	@Test(priority=12)
+	public void SearchButton_with_FromDate_ToDate_Morethen90days() throws InterruptedException {
+		homePage.verifyHomePageurl();
+		Cartlistingpage.clickOnCartListingPage();
+		Cartlistingpage.veryfyCartLisingpage();
+		
+		WebElement element = driver.findElement(By.xpath("//button[@title='Advanced Filters']"));
+		((JavascriptExecutor) driver).executeScript("arguments[0].click();", element);
+
+        
+        // Get today's date in "DD-MM-YYYY" format
+        LocalDate today = LocalDate.now();
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-MM-yyyy");
+        String todayDate = today.format(formatter);
+
+     //   Thread.sleep(1000);
+        
+        // Find the date input field and enter today's date
+        WebElement fromdate = driver.findElement(By.xpath("//input[@formcontrolname='from_date']"));
+        fromdate.sendKeys("21-11-2024");
+        
+      //  Thread.sleep(1000);
+        // Find the date input field and enter today's date
+        WebElement todate = driver.findElement(By.xpath("//input[@formcontrolname='to_date']"));
+        todate.sendKeys("20-02-2025");
+        
+        Cartlistingpage.clickon_searchbtn();
+        
+        // Print confirmation
+        System.out.println("Entered Date: " + todayDate);
+        
+        // Locate all rows inside the table
+        List<WebElement> rows = driver.findElements(By.xpath("//table[@id='DataTables_Table_0']"));
+        int rowCount = rows.size();
+       
+        // Print row count
+        System.out.println("✅ Row count is: " + rowCount);
+        
+        // Assert that table is not empty
+        Assert.assertTrue(rowCount > 1, "❌ Table did not reset!");
+ 
+	}
+	
+	@Test(priority=13)
+	public void SearchButton_with_FromDate_ToDate_within90days() throws InterruptedException {
+		homePage.verifyHomePageurl();
+		Cartlistingpage.clickOnCartListingPage();
+		Cartlistingpage.veryfyCartLisingpage();
+		
+		WebElement element = driver.findElement(By.xpath("//button[@title='Advanced Filters']"));
+		((JavascriptExecutor) driver).executeScript("arguments[0].click();", element);
+
+        
+        // Get today's date in "DD-MM-YYYY" format
+        LocalDate today = LocalDate.now();
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-MM-yyyy");
+        String todayDate = today.format(formatter);
+
+       // Thread.sleep(1000);
+        
+        // Find the date input field and enter today's date
+        WebElement fromdate = driver.findElement(By.xpath("//input[@formcontrolname='from_date']"));
+        fromdate.sendKeys("21-12-2024");
+        
+      //  Thread.sleep(1000);
+        // Find the date input field and enter today's date
+        WebElement todate = driver.findElement(By.xpath("//input[@formcontrolname='to_date']"));
+        todate.sendKeys("20-02-2025");
+        
+        Cartlistingpage.clickon_searchbtn();
+        
+        // Print confirmation
+        System.out.println("Entered Date: " + todayDate);
+        
+        // Locate all rows inside the table
+        List<WebElement> rows = driver.findElements(By.xpath("//table[@id='DataTables_Table_0']"));
+        int rowCount = rows.size();
+       
+        // Print row count
+        System.out.println("✅ Row count is: " + rowCount);
+        
+        // Assert that table is not empty
+        Assert.assertTrue(rowCount > 0, "❌ Table did not reset!");
+        
+ 
+	}	
+
+
 	@AfterMethod
 	public void tearDown(){
 		driver.quit();

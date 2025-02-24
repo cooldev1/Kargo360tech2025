@@ -1,320 +1,203 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="11" passed="8" failed="3" skipped="0">
+<testng-results ignored="0" total="13" passed="12" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-02-17T19:22:15 IST" name="Default suite" finished-at="2025-02-17T19:23:51 IST" duration-ms="96032">
+  <suite started-at="2025-02-24T10:44:58Z" name="Default suite" finished-at="2025-02-24T10:46:47Z" duration-ms="109486">
     <groups>
     </groups>
-    <test started-at="2025-02-17T19:22:15 IST" name="Default test" finished-at="2025-02-17T19:23:51 IST" duration-ms="96032">
+    <test started-at="2025-02-24T10:44:58Z" name="Default test" finished-at="2025-02-24T10:46:47Z" duration-ms="109486">
       <class name="com.crm.qa.testcases.CartMasterListingPageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.qa.testcases.CartMasterListingPageTest@73e22a3d]" started-at="2025-02-17T19:22:15 IST" name="setUp" finished-at="2025-02-17T19:22:19 IST" duration-ms="4229" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.qa.testcases.CartMasterListingPageTest@3403e2ac]" started-at="2025-02-24T16:14:58Z" name="setUp" finished-at="2025-02-24T16:15:01Z" duration-ms="2991" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifyhomepage()[pri:1, instance:com.crm.qa.testcases.CartMasterListingPageTest@73e22a3d]" started-at="2025-02-17T19:22:19 IST" name="verifyhomepage" finished-at="2025-02-17T19:22:22 IST" duration-ms="3024" status="PASS">
+        <test-method signature="verifyhomepage()[pri:1, instance:com.crm.qa.testcases.CartMasterListingPageTest@3403e2ac]" started-at="2025-02-24T16:15:01Z" name="verifyhomepage" finished-at="2025-02-24T16:15:04Z" duration-ms="3038" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyhomepage -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.crm.qa.testcases.CartMasterListingPageTest@73e22a3d]" started-at="2025-02-17T19:22:22 IST" name="tearDown" finished-at="2025-02-17T19:22:22 IST" duration-ms="153" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.crm.qa.testcases.CartMasterListingPageTest@3403e2ac]" started-at="2025-02-24T16:15:04Z" name="tearDown" finished-at="2025-02-24T16:15:04Z" duration-ms="169" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.qa.testcases.CartMasterListingPageTest@73e22a3d]" started-at="2025-02-17T19:22:22 IST" name="setUp" finished-at="2025-02-17T19:22:26 IST" duration-ms="3689" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.qa.testcases.CartMasterListingPageTest@3403e2ac]" started-at="2025-02-24T16:15:04Z" name="setUp" finished-at="2025-02-24T16:15:06Z" duration-ms="2265" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifyCartListingpage()[pri:2, instance:com.crm.qa.testcases.CartMasterListingPageTest@73e22a3d]" started-at="2025-02-17T19:22:26 IST" name="verifyCartListingpage" finished-at="2025-02-17T19:22:29 IST" duration-ms="3186" status="FAIL">
-          <exception class="org.openqa.selenium.ElementNotInteractableException">
-            <message>
-              <![CDATA[element not interactable:  has no size and location
-  (Session info: chrome=133.0.6943.99)
-Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'CARGO-IT001', ip: '10.10.84.163', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.99, chrome: {chromedriverVersion: 133.0.6943.98 (da53563ceb66..., userDataDir: C:\Users\VISHAL~1.JAI\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62350}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: f538e51fbed240745a17fd5e18035f6f]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable:  has no size and location
-  (Session info: chrome=133.0.6943.99)
-Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'CARGO-IT001', ip: '10.10.84.163', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.99, chrome: {chromedriverVersion: 133.0.6943.98 (da53563ceb66..., userDataDir: C:\Users\VISHAL~1.JAI\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62350}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: f538e51fbed240745a17fd5e18035f6f
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:614)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
-at jdk.proxy2/jdk.proxy2.$Proxy11.perform(Unknown Source)
-at org.openqa.selenium.support.events.EventFiringWebDriver.perform(EventFiringWebDriver.java:360)
-at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:640)
-at com.crm.qa.pages.CartMasterListingPage.clickOnCartListingPage(CartMasterListingPage.java:80)
-at com.crm.qa.testcases.CartMasterListingPageTest.verifyCartListingpage(CartMasterListingPageTest.java:78)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
+        <test-method signature="verifyCartListingpage()[pri:2, instance:com.crm.qa.testcases.CartMasterListingPageTest@3403e2ac]" started-at="2025-02-24T16:15:06Z" name="verifyCartListingpage" finished-at="2025-02-24T16:15:10Z" duration-ms="3911" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyCartListingpage -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.crm.qa.testcases.CartMasterListingPageTest@73e22a3d]" started-at="2025-02-17T19:22:31 IST" name="tearDown" finished-at="2025-02-17T19:22:31 IST" duration-ms="206" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.crm.qa.testcases.CartMasterListingPageTest@3403e2ac]" started-at="2025-02-24T16:15:10Z" name="tearDown" finished-at="2025-02-24T16:15:10Z" duration-ms="162" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.qa.testcases.CartMasterListingPageTest@73e22a3d]" started-at="2025-02-17T19:22:31 IST" name="setUp" finished-at="2025-02-17T19:22:37 IST" duration-ms="5983" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.qa.testcases.CartMasterListingPageTest@3403e2ac]" started-at="2025-02-24T16:15:10Z" name="setUp" finished-at="2025-02-24T16:15:13Z" duration-ms="2747" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifyUIElements()[pri:3, instance:com.crm.qa.testcases.CartMasterListingPageTest@73e22a3d]" started-at="2025-02-17T19:22:37 IST" name="verifyUIElements" finished-at="2025-02-17T19:22:41 IST" duration-ms="3965" status="FAIL">
+        <test-method signature="verifyUIElements()[pri:3, instance:com.crm.qa.testcases.CartMasterListingPageTest@3403e2ac]" started-at="2025-02-24T16:15:13Z" name="verifyUIElements" finished-at="2025-02-24T16:15:18Z" duration-ms="5113" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUIElements -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.crm.qa.testcases.CartMasterListingPageTest@3403e2ac]" started-at="2025-02-24T16:15:18Z" name="tearDown" finished-at="2025-02-24T16:15:18Z" duration-ms="173" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.qa.testcases.CartMasterListingPageTest@3403e2ac]" started-at="2025-02-24T16:15:18Z" name="setUp" finished-at="2025-02-24T16:15:24Z" duration-ms="6069" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifySearchbtn_withCartNo()[pri:4, instance:com.crm.qa.testcases.CartMasterListingPageTest@3403e2ac]" started-at="2025-02-24T16:15:24Z" name="verifySearchbtn_withCartNo" finished-at="2025-02-24T16:15:29Z" duration-ms="4489" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySearchbtn_withCartNo -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.crm.qa.testcases.CartMasterListingPageTest@3403e2ac]" started-at="2025-02-24T16:15:29Z" name="tearDown" finished-at="2025-02-24T16:15:29Z" duration-ms="156" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.qa.testcases.CartMasterListingPageTest@3403e2ac]" started-at="2025-02-24T16:15:29Z" name="setUp" finished-at="2025-02-24T16:15:31Z" duration-ms="2375" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifySearchbtn_withCartdes()[pri:5, instance:com.crm.qa.testcases.CartMasterListingPageTest@3403e2ac]" started-at="2025-02-24T16:15:31Z" name="verifySearchbtn_withCartdes" finished-at="2025-02-24T16:15:36Z" duration-ms="5235" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySearchbtn_withCartdes -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.crm.qa.testcases.CartMasterListingPageTest@3403e2ac]" started-at="2025-02-24T16:15:36Z" name="tearDown" finished-at="2025-02-24T16:15:37Z" duration-ms="141" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.qa.testcases.CartMasterListingPageTest@3403e2ac]" started-at="2025-02-24T16:15:37Z" name="setUp" finished-at="2025-02-24T16:15:40Z" duration-ms="3061" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifySearchbtn_withStationCode()[pri:6, instance:com.crm.qa.testcases.CartMasterListingPageTest@3403e2ac]" started-at="2025-02-24T16:15:40Z" name="verifySearchbtn_withStationCode" finished-at="2025-02-24T16:15:44Z" duration-ms="4376" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySearchbtn_withStationCode -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.crm.qa.testcases.CartMasterListingPageTest@3403e2ac]" started-at="2025-02-24T16:15:44Z" name="tearDown" finished-at="2025-02-24T16:15:44Z" duration-ms="183" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.qa.testcases.CartMasterListingPageTest@3403e2ac]" started-at="2025-02-24T16:15:44Z" name="setUp" finished-at="2025-02-24T16:15:47Z" duration-ms="2690" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifySearchbtn_withStatus()[pri:7, instance:com.crm.qa.testcases.CartMasterListingPageTest@3403e2ac]" started-at="2025-02-24T16:15:47Z" name="verifySearchbtn_withStatus" finished-at="2025-02-24T16:15:52Z" duration-ms="5448" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySearchbtn_withStatus -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.crm.qa.testcases.CartMasterListingPageTest@3403e2ac]" started-at="2025-02-24T16:15:52Z" name="tearDown" finished-at="2025-02-24T16:15:52Z" duration-ms="144" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.qa.testcases.CartMasterListingPageTest@3403e2ac]" started-at="2025-02-24T16:15:52Z" name="setUp" finished-at="2025-02-24T16:15:57Z" duration-ms="4590" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testRefreshButton_withCartNo()[pri:8, instance:com.crm.qa.testcases.CartMasterListingPageTest@3403e2ac]" started-at="2025-02-24T16:15:57Z" name="testRefreshButton_withCartNo" finished-at="2025-02-24T16:16:03Z" duration-ms="5726" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRefreshButton_withCartNo -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.crm.qa.testcases.CartMasterListingPageTest@3403e2ac]" started-at="2025-02-24T16:16:03Z" name="tearDown" finished-at="2025-02-24T16:16:03Z" duration-ms="140" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.qa.testcases.CartMasterListingPageTest@3403e2ac]" started-at="2025-02-24T16:16:03Z" name="setUp" finished-at="2025-02-24T16:16:06Z" duration-ms="3053" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testRefreshButton_withDes()[pri:9, instance:com.crm.qa.testcases.CartMasterListingPageTest@3403e2ac]" started-at="2025-02-24T16:16:06Z" name="testRefreshButton_withDes" finished-at="2025-02-24T16:16:13Z" duration-ms="6686" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRefreshButton_withDes -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.crm.qa.testcases.CartMasterListingPageTest@3403e2ac]" started-at="2025-02-24T16:16:13Z" name="tearDown" finished-at="2025-02-24T16:16:13Z" duration-ms="178" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.qa.testcases.CartMasterListingPageTest@3403e2ac]" started-at="2025-02-24T16:16:13Z" name="setUp" finished-at="2025-02-24T16:16:15Z" duration-ms="2424" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testRefreshButton_withStationCode()[pri:10, instance:com.crm.qa.testcases.CartMasterListingPageTest@3403e2ac]" started-at="2025-02-24T16:16:15Z" name="testRefreshButton_withStationCode" finished-at="2025-02-24T16:16:20Z" duration-ms="4638" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRefreshButton_withStationCode -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.crm.qa.testcases.CartMasterListingPageTest@3403e2ac]" started-at="2025-02-24T16:16:20Z" name="tearDown" finished-at="2025-02-24T16:16:20Z" duration-ms="378" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.qa.testcases.CartMasterListingPageTest@3403e2ac]" started-at="2025-02-24T16:16:20Z" name="setUp" finished-at="2025-02-24T16:16:23Z" duration-ms="3026" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testRefreshButton_withStatus()[pri:11, instance:com.crm.qa.testcases.CartMasterListingPageTest@3403e2ac]" started-at="2025-02-24T16:16:23Z" name="testRefreshButton_withStatus" finished-at="2025-02-24T16:16:29Z" duration-ms="6126" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRefreshButton_withStatus -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.crm.qa.testcases.CartMasterListingPageTest@3403e2ac]" started-at="2025-02-24T16:16:29Z" name="tearDown" finished-at="2025-02-24T16:16:30Z" duration-ms="166" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.qa.testcases.CartMasterListingPageTest@3403e2ac]" started-at="2025-02-24T16:16:30Z" name="setUp" finished-at="2025-02-24T16:16:33Z" duration-ms="3226" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="SearchButton_with_FromDate_ToDate_Morethen90days()[pri:12, instance:com.crm.qa.testcases.CartMasterListingPageTest@3403e2ac]" started-at="2025-02-24T16:16:33Z" name="SearchButton_with_FromDate_ToDate_Morethen90days" finished-at="2025-02-24T16:16:37Z" duration-ms="4427" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[❌ advanc filter Not Found!]]>
+              <![CDATA[❌ Table did not reset! expected [true] but found [false]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: ❌ advanc filter Not Found!
-at com.crm.qa.testcases.CartMasterListingPageTest.verifyUIElements(CartMasterListingPageTest.java:87)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+              <![CDATA[java.lang.AssertionError: ❌ Table did not reset! expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:93)
+	at org.testng.Assert.failNotEquals(Assert.java:512)
+	at org.testng.Assert.assertTrue(Assert.java:41)
+	at com.crm.qa.testcases.CartMasterListingPageTest.SearchButton_with_FromDate_ToDate_Morethen90days(CartMasterListingPageTest.java:336)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyUIElements -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.crm.qa.testcases.CartMasterListingPageTest@73e22a3d]" started-at="2025-02-17T19:22:43 IST" name="tearDown" finished-at="2025-02-17T19:22:44 IST" duration-ms="224" status="PASS">
+        </test-method> <!-- SearchButton_with_FromDate_ToDate_Morethen90days -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.crm.qa.testcases.CartMasterListingPageTest@3403e2ac]" started-at="2025-02-24T16:16:39Z" name="tearDown" finished-at="2025-02-24T16:16:40Z" duration-ms="179" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.qa.testcases.CartMasterListingPageTest@73e22a3d]" started-at="2025-02-17T19:22:44 IST" name="setUp" finished-at="2025-02-17T19:22:47 IST" duration-ms="3168" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.qa.testcases.CartMasterListingPageTest@3403e2ac]" started-at="2025-02-24T16:16:40Z" name="setUp" finished-at="2025-02-24T16:16:42Z" duration-ms="2767" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifySearchbtn_withCartNo()[pri:4, instance:com.crm.qa.testcases.CartMasterListingPageTest@73e22a3d]" started-at="2025-02-17T19:22:47 IST" name="verifySearchbtn_withCartNo" finished-at="2025-02-17T19:22:51 IST" duration-ms="4265" status="PASS">
+        <test-method signature="SearchButton_with_FromDate_ToDate_within90days()[pri:13, instance:com.crm.qa.testcases.CartMasterListingPageTest@3403e2ac]" started-at="2025-02-24T16:16:42Z" name="SearchButton_with_FromDate_ToDate_within90days" finished-at="2025-02-24T16:16:47Z" duration-ms="4416" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifySearchbtn_withCartNo -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.crm.qa.testcases.CartMasterListingPageTest@73e22a3d]" started-at="2025-02-17T19:22:51 IST" name="tearDown" finished-at="2025-02-17T19:22:51 IST" duration-ms="173" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.qa.testcases.CartMasterListingPageTest@73e22a3d]" started-at="2025-02-17T19:22:51 IST" name="setUp" finished-at="2025-02-17T19:22:54 IST" duration-ms="3189" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="verifySearchbtn_withCartdes()[pri:5, instance:com.crm.qa.testcases.CartMasterListingPageTest@73e22a3d]" started-at="2025-02-17T19:22:54 IST" name="verifySearchbtn_withCartdes" finished-at="2025-02-17T19:22:59 IST" duration-ms="5023" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifySearchbtn_withCartdes -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.crm.qa.testcases.CartMasterListingPageTest@73e22a3d]" started-at="2025-02-17T19:22:59 IST" name="tearDown" finished-at="2025-02-17T19:22:59 IST" duration-ms="155" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.qa.testcases.CartMasterListingPageTest@73e22a3d]" started-at="2025-02-17T19:22:59 IST" name="setUp" finished-at="2025-02-17T19:23:03 IST" duration-ms="3198" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="verifySearchbtn_withStationCode()[pri:6, instance:com.crm.qa.testcases.CartMasterListingPageTest@73e22a3d]" started-at="2025-02-17T19:23:03 IST" name="verifySearchbtn_withStationCode" finished-at="2025-02-17T19:23:07 IST" duration-ms="4103" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifySearchbtn_withStationCode -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.crm.qa.testcases.CartMasterListingPageTest@73e22a3d]" started-at="2025-02-17T19:23:07 IST" name="tearDown" finished-at="2025-02-17T19:23:07 IST" duration-ms="146" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.qa.testcases.CartMasterListingPageTest@73e22a3d]" started-at="2025-02-17T19:23:07 IST" name="setUp" finished-at="2025-02-17T19:23:10 IST" duration-ms="3512" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="verifySearchbtn_withStatus()[pri:7, instance:com.crm.qa.testcases.CartMasterListingPageTest@73e22a3d]" started-at="2025-02-17T19:23:10 IST" name="verifySearchbtn_withStatus" finished-at="2025-02-17T19:23:16 IST" duration-ms="5257" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifySearchbtn_withStatus -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.crm.qa.testcases.CartMasterListingPageTest@73e22a3d]" started-at="2025-02-17T19:23:16 IST" name="tearDown" finished-at="2025-02-17T19:23:16 IST" duration-ms="234" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.qa.testcases.CartMasterListingPageTest@73e22a3d]" started-at="2025-02-17T19:23:16 IST" name="setUp" finished-at="2025-02-17T19:23:19 IST" duration-ms="3409" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="testRefreshButton_withCartNo()[pri:8, instance:com.crm.qa.testcases.CartMasterListingPageTest@73e22a3d]" started-at="2025-02-17T19:23:19 IST" name="testRefreshButton_withCartNo" finished-at="2025-02-17T19:23:25 IST" duration-ms="5345" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testRefreshButton_withCartNo -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.crm.qa.testcases.CartMasterListingPageTest@73e22a3d]" started-at="2025-02-17T19:23:25 IST" name="tearDown" finished-at="2025-02-17T19:23:25 IST" duration-ms="260" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.qa.testcases.CartMasterListingPageTest@73e22a3d]" started-at="2025-02-17T19:23:25 IST" name="setUp" finished-at="2025-02-17T19:23:28 IST" duration-ms="3267" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="testRefreshButton_withDes()[pri:9, instance:com.crm.qa.testcases.CartMasterListingPageTest@73e22a3d]" started-at="2025-02-17T19:23:28 IST" name="testRefreshButton_withDes" finished-at="2025-02-17T19:23:34 IST" duration-ms="6163" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testRefreshButton_withDes -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.crm.qa.testcases.CartMasterListingPageTest@73e22a3d]" started-at="2025-02-17T19:23:34 IST" name="tearDown" finished-at="2025-02-17T19:23:35 IST" duration-ms="188" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.qa.testcases.CartMasterListingPageTest@73e22a3d]" started-at="2025-02-17T19:23:35 IST" name="setUp" finished-at="2025-02-17T19:23:38 IST" duration-ms="3131" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="testRefreshButton_withStationCode()[pri:10, instance:com.crm.qa.testcases.CartMasterListingPageTest@73e22a3d]" started-at="2025-02-17T19:23:38 IST" name="testRefreshButton_withStationCode" finished-at="2025-02-17T19:23:41 IST" duration-ms="3164" status="FAIL">
-          <exception class="org.openqa.selenium.ElementNotInteractableException">
-            <message>
-              <![CDATA[element not interactable:  has no size and location
-  (Session info: chrome=133.0.6943.99)
-Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'CARGO-IT001', ip: '10.10.84.163', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.99, chrome: {chromedriverVersion: 133.0.6943.98 (da53563ceb66..., userDataDir: C:\Users\VISHAL~1.JAI\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62577}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 8ba038ac6bdcf9a84717b6b296f6f247]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable:  has no size and location
-  (Session info: chrome=133.0.6943.99)
-Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'CARGO-IT001', ip: '10.10.84.163', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.99, chrome: {chromedriverVersion: 133.0.6943.98 (da53563ceb66..., userDataDir: C:\Users\VISHAL~1.JAI\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62577}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 8ba038ac6bdcf9a84717b6b296f6f247
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:614)
-at jdk.internal.reflect.GeneratedMethodAccessor10.invoke(Unknown Source)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
-at jdk.proxy2/jdk.proxy2.$Proxy11.perform(Unknown Source)
-at org.openqa.selenium.support.events.EventFiringWebDriver.perform(EventFiringWebDriver.java:360)
-at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:640)
-at com.crm.qa.pages.CartMasterListingPage.clickOnCartListingPage(CartMasterListingPage.java:80)
-at com.crm.qa.testcases.CartMasterListingPageTest.testRefreshButton_withStationCode(CartMasterListingPageTest.java:236)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testRefreshButton_withStationCode -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.crm.qa.testcases.CartMasterListingPageTest@73e22a3d]" started-at="2025-02-17T19:23:43 IST" name="tearDown" finished-at="2025-02-17T19:23:43 IST" duration-ms="182" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.qa.testcases.CartMasterListingPageTest@73e22a3d]" started-at="2025-02-17T19:23:43 IST" name="setUp" finished-at="2025-02-17T19:23:46 IST" duration-ms="3059" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="testRefreshButton_withStatus()[pri:11, instance:com.crm.qa.testcases.CartMasterListingPageTest@73e22a3d]" started-at="2025-02-17T19:23:46 IST" name="testRefreshButton_withStatus" finished-at="2025-02-17T19:23:50 IST" duration-ms="4160" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testRefreshButton_withStatus -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.crm.qa.testcases.CartMasterListingPageTest@73e22a3d]" started-at="2025-02-17T19:23:50 IST" name="tearDown" finished-at="2025-02-17T19:23:51 IST" duration-ms="163" status="PASS">
+        </test-method> <!-- SearchButton_with_FromDate_ToDate_within90days -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.crm.qa.testcases.CartMasterListingPageTest@3403e2ac]" started-at="2025-02-24T16:16:47Z" name="tearDown" finished-at="2025-02-24T16:16:47Z" duration-ms="194" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
