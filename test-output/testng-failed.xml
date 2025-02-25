@@ -6,8 +6,7 @@
       <class name="com.crm.qa.testcases.CartMasterListingPageTest">
         <methods>
           <include name="setUp"/>
-          <include name="tearDown"/>
-          <include name="SearchButton_with_FromDate_ToDate_Morethen90days"/>
+          <include name="PaginationBtn_Next"/>
         </methods>
       </class> <!-- com.crm.qa.testcases.CartMasterListingPageTest -->
     </classes>

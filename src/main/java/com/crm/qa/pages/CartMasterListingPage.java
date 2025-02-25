@@ -60,8 +60,8 @@ public class CartMasterListingPage extends TestBase {
 		@FindBy(xpath = "//*[@title='Create Cart']")
 		WebElement createCartbtn;
 		
-		@FindBy(xpath = "//a[@href='/cart/list']")
-		WebElement paginationbtn;
+		@FindBy(xpath = "//span[contains(text(),' Next   ')]")
+		WebElement Nextbtn_paginationbtn;
 		
 		@FindBy(xpath = "//input[@formcontrolname='from_date']")
 		WebElement fromDate;
@@ -117,9 +117,12 @@ public class CartMasterListingPage extends TestBase {
 	createCartbtn.click();		
 }
 	public void clickon_paginationbtn() throws InterruptedException{
-	paginationbtn.isDisplayed();		
+		Nextbtn_paginationbtn.isDisplayed();		
 }
 
+	public void clickon_Next_Paginationbtn() throws InterruptedException{
+		Nextbtn_paginationbtn.click();		
+}
 	
 	
 }
