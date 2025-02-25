@@ -426,11 +426,11 @@ public class CartMasterListingPageTest extends TestBase{
  
 	}	
 	
-//i have comment browser Closed the browser
-//	@AfterMethod
-//	public void tearDown(){
-//		driver.quit();
-//	}
+// Closed the browser
+	@AfterMethod
+	public void tearDown(){
+		driver.quit();
+	}
 	
 	
 	
