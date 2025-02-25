@@ -425,11 +425,12 @@ public class CartMasterListingPageTest extends TestBase{
         assertNotEquals("Values should not be equal", currentT1_Value, NextT1_Value);
  
 	}	
-//
-//	@AfterMethod
-//	public void tearDown(){
-//		driver.quit();
-//	}
+	
+// Closed the browser
+	@AfterMethod
+	public void tearDown(){
+		driver.quit();
+	}
 	
 	
 	
