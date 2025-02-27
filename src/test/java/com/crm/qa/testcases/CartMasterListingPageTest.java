@@ -393,11 +393,6 @@ public class CartMasterListingPageTest extends TestBase{
 		WebElement element = driver.findElement(By.xpath("//button[@title='Advanced Filters']"));
 		((JavascriptExecutor) driver).executeScript("arguments[0].click();", element);
 
-		 // Before triggering table reload
-        WebElement tableBefore = driver.findElement(By.id("table_id"));
-        String tableTextBefore = tableBefore.getText();
-
-		
          // Find the fist table value in raw one
         String currentT1_Value = driver.findElement(By.xpath("//table[@id='DataTables_Table_0']//tbody//tr[1]/td[1]")).getText();
         System.out.println("Capture Value from current Table: "+currentT1_Value);
@@ -405,23 +400,23 @@ public class CartMasterListingPageTest extends TestBase{
         // Click on Next button
         Cartlistingpage.clickon_Next_Paginationbtn();
         
-     // Wait until the table content changes      
-		testUtil.verifyElementVisibility(By.xpath("//span[contains(text(),' Prev   ')]"), "Privious Button is display", 10);
-		driver.findElement(By.xpath("//span[contains(text(),' Prev   ')]")).isDisplayed();
-
-                
-//        Thread.sleep(2000);
-//        Cartlistingpage.clickon_Next_Paginationbtn();
-//        Thread.sleep(3000);
-//        Cartlistingpage.clickon_Next_Paginationbtn();
-        
+       
+   
+//		Thread.sleep(2000);
+		
 //        // Find vale after next button
         String NextT1_Value = driver.findElement(By.xpath("//table[@id='DataTables_Table_0']//tbody//tr[1]/td[1]")).getText();
        
+     // Wait until table gets new rows
+        WebDriverWait wait = new WebDriverWait(driver, 10); // Timeout in seconds
+        wait.until(ExpectedConditions.not(ExpectedConditions.textToBePresentInElementLocated(
+        	    By.xpath("//table[@id='DataTables_Table_0']//tbody//tr[1]/td[1]"), currentT1_Value
+        	)));
+     		
         // Print row count
         System.out.println("✅ After Next Button Clik Value: " + NextT1_Value);
         
-     //   Assert.assertEquals(currentT1_Value,currentT1_Value);
+     // Now assert the values are different
         assertNotEquals("Values should not be equal", currentT1_Value, NextT1_Value);
  
 	}	
