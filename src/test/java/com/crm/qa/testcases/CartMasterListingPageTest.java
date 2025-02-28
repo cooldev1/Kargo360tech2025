@@ -382,10 +382,45 @@ public class CartMasterListingPageTest extends TestBase{
 //        
 // 
 //	}	
-
-
+//
+//
+//	@Test(priority=14)
+//	public void PaginationBtn_Next() throws InterruptedException {
+//		homePage.verifyHomePageurl();
+//		Cartlistingpage.clickOnCartListingPage();
+//		Cartlistingpage.veryfyCartLisingpage();
+//		
+//		WebElement element = driver.findElement(By.xpath("//button[@title='Advanced Filters']"));
+//		((JavascriptExecutor) driver).executeScript("arguments[0].click();", element);
+//
+//         // Find the fist table value in raw one
+//        String currentT1_Value = driver.findElement(By.xpath("//table[@id='DataTables_Table_0']//tbody//tr[1]/td[1]")).getText();
+//        System.out.println("Capture Value from current Table: "+currentT1_Value);
+//        
+//        // Click on Next button
+//        Cartlistingpage.clickon_Next_Paginationbtn();
+//        
+//        // Wait until table gets new rows
+//        WebDriverWait wait = new WebDriverWait(driver, 10); // Timeout in seconds
+//        wait.until(ExpectedConditions.not(ExpectedConditions.textToBePresentInElementLocated(
+//        	    By.xpath("//table[@id='DataTables_Table_0']//tbody//tr[1]/td[1]"), currentT1_Value
+//        	)));      
+//   		
+//       // Find vale after next button
+//        String NextT1_Value = driver.findElement(By.xpath("//table[@id='DataTables_Table_0']//tbody//tr[1]/td[1]")).getText();
+//       
+//        // Print row count
+//        System.out.println("✅ After Next Button Clik Value: " + NextT1_Value);
+//              
+//     // Test should fail if values are equal
+//        Assert.assertNotEquals(currentT1_Value, NextT1_Value, "❌ Test failed: Pagination did not update the table data!");
+//
+// 
+//	}	
+//
+	
 	@Test(priority=14)
-	public void PaginationBtn_Next() throws InterruptedException {
+	public void CreateCartbrn_working() throws InterruptedException {
 		homePage.verifyHomePageurl();
 		Cartlistingpage.clickOnCartListingPage();
 		Cartlistingpage.veryfyCartLisingpage();
@@ -400,32 +435,30 @@ public class CartMasterListingPageTest extends TestBase{
         // Click on Next button
         Cartlistingpage.clickon_Next_Paginationbtn();
         
-       
-   
-//		Thread.sleep(2000);
-		
-//        // Find vale after next button
-        String NextT1_Value = driver.findElement(By.xpath("//table[@id='DataTables_Table_0']//tbody//tr[1]/td[1]")).getText();
-       
-     // Wait until table gets new rows
+        // Wait until table gets new rows
         WebDriverWait wait = new WebDriverWait(driver, 10); // Timeout in seconds
         wait.until(ExpectedConditions.not(ExpectedConditions.textToBePresentInElementLocated(
         	    By.xpath("//table[@id='DataTables_Table_0']//tbody//tr[1]/td[1]"), currentT1_Value
-        	)));
-     		
+        	)));      
+   		
+       // Find vale after next button
+        String NextT1_Value = driver.findElement(By.xpath("//table[@id='DataTables_Table_0']//tbody//tr[1]/td[1]")).getText();
+       
         // Print row count
         System.out.println("✅ After Next Button Clik Value: " + NextT1_Value);
-        
-     // Now assert the values are different
-        assertNotEquals("Values should not be equal", currentT1_Value, NextT1_Value);
+              
+     // Test should fail if values are equal
+        Assert.assertNotEquals(currentT1_Value, NextT1_Value, "❌ Test failed: Pagination did not update the table data!");
+
  
 	}	
+
 	
 // commit browser Closed the browser
-//	@AfterMethod
-//	public void tearDown(){
-//		driver.quit();
-//	}
+	@AfterMethod
+	public void tearDown(){
+		driver.quit();
+	}
 	
 	
 	

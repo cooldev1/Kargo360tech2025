@@ -121,7 +121,11 @@ public class CartMasterListingPage extends TestBase {
 }
 
 	public void clickon_Next_Paginationbtn() throws InterruptedException{
-		Nextbtn_paginationbtn.click();		
+		
+		WebDriverWait wait = new WebDriverWait(driver, 10);
+		WebElement nextButton = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//span[contains(text(),' Next   ')]")));
+		nextButton.click();
+//		Nextbtn_paginationbtn.click();		
 }
 	
 	
