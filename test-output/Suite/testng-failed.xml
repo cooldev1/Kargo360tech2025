@@ -5,8 +5,8 @@
     <classes>
       <class name="com.crm.qa.testcases.CartMasterListingPageTest">
         <methods>
+          <include name="CreateCartbrn_working"/>
           <include name="tearDown"/>
-          <include name="SearchButton_with_FromDate_ToDate_Morethen90days"/>
           <include name="setUp"/>
         </methods>
       </class> <!-- com.crm.qa.testcases.CartMasterListingPageTest -->

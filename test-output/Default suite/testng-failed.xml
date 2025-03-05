@@ -5,8 +5,9 @@
     <classes>
       <class name="com.crm.qa.testcases.CartMasterListingPageTest">
         <methods>
+          <include name="CreateCartbrn_working"/>
+          <include name="tearDown"/>
           <include name="setUp"/>
-          <include name="PaginationBtn_Next"/>
         </methods>
       </class> <!-- com.crm.qa.testcases.CartMasterListingPageTest -->
     </classes>

@@ -27,6 +27,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
@@ -75,6 +76,7 @@ public class CartMasterListingPageTest extends TestBase{
 		loginPage = new LoginPage();
 		NewCartCreationPage = new NewCartcreationPageTest();
 		homePage = loginPage.login(prop.getProperty("username"), prop.getProperty("password"));
+		
 		
 //		TestUtil.runTimeInfo("error", "login successful");
 	
@@ -419,37 +421,31 @@ public class CartMasterListingPageTest extends TestBase{
 //	}	
 //
 	
-	@Test(priority=14)
+	@Test(priority=15)
 	public void CreateCartbrn_working() throws InterruptedException {
 		homePage.verifyHomePageurl();
 		Cartlistingpage.clickOnCartListingPage();
 		Cartlistingpage.veryfyCartLisingpage();
-		
+
+	    // Using Explicit Wait to wait for an element
+        testUtil.verifyElementVisibility(By.xpath("//button[@title='Create Cart']"), "create button is not showing", 10);
+        
 		WebElement element = driver.findElement(By.xpath("//button[@title='Advanced Filters']"));
 		((JavascriptExecutor) driver).executeScript("arguments[0].click();", element);
 
-         // Find the fist table value in raw one
-        String currentT1_Value = driver.findElement(By.xpath("//table[@id='DataTables_Table_0']//tbody//tr[1]/td[1]")).getText();
-        System.out.println("Capture Value from current Table: "+currentT1_Value);
+	    // Using Explicit Wait to wait for an element
+        testUtil.verifyElementVisibility(By.xpath("//BUTTON[@title='Create Cart']"), "Cart Creation button is not showing", 10); 
+
         
-        // Click on Next button
-        Cartlistingpage.clickon_Next_Paginationbtn();
+	     // Click on create cart button
+        Cartlistingpage.clickon_createCartbtn();
         
-        // Wait until table gets new rows
-        WebDriverWait wait = new WebDriverWait(driver, 10); // Timeout in seconds
-        wait.until(ExpectedConditions.not(ExpectedConditions.textToBePresentInElementLocated(
-        	    By.xpath("//table[@id='DataTables_Table_0']//tbody//tr[1]/td[1]"), currentT1_Value
-        	)));      
-   		
-       // Find vale after next button
-        String NextT1_Value = driver.findElement(By.xpath("//table[@id='DataTables_Table_0']//tbody//tr[1]/td[1]")).getText();
-       
-        // Print row count
-        System.out.println("✅ After Next Button Clik Value: " + NextT1_Value);
+	    // Using Explicit Wait to wait for an element
+        testUtil.verifyElementVisibility(By.xpath("//button[@title='Submit']"), "Cart Creation submit is not showing", 10); 
+   
               
      // Test should fail if values are equal
-        Assert.assertNotEquals(currentT1_Value, NextT1_Value, "❌ Test failed: Pagination did not update the table data!");
-
+        Assert.assertEquals(driver.getCurrentUrl(), "https://devspicexpress.kargo360tech.com/cart/create");
  
 	}	
 
