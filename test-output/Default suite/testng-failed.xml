@@ -3,13 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.crm.qa.testcases.CartMasterListingPageTest">
+      <class name="com.crm.qa.testcases.A2A_BookingPageTest">
         <methods>
-          <include name="CreateCartbrn_working"/>
-          <include name="tearDown"/>
+          <include name="A2A_Prepaid_one_Lag_flow"/>
           <include name="setUp"/>
         </methods>
-      </class> <!-- com.crm.qa.testcases.CartMasterListingPageTest -->
+      </class> <!-- com.crm.qa.testcases.A2A_BookingPageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

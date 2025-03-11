@@ -38,7 +38,7 @@ public class TestUtil extends TestBase {
 		driver.switchTo().frame("mainpanel");
 	}
 
-	public static Object[][] getTestData(String sheetName) {
+	public static Object[][] getTestData(String sheetName) throws InvalidFormatException {
 		FileInputStream file = null;
 		try {
 			file = new FileInputStream(TESTDATA_SHEET_PATH);
@@ -47,8 +47,6 @@ public class TestUtil extends TestBase {
 		}
 		try {
 			book = WorkbookFactory.create(file);
-		} catch (InvalidFormatException e) {
-			e.printStackTrace();
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
